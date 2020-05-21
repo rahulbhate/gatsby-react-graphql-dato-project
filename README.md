@@ -19,7 +19,7 @@ Kick off your project with this boilerplate. This starter ships with the main Ga
     Use the Gatsby CLI to create a new site, specifying the starter boilerplate.
 
     ```shell
-    # create a new Gatsby site using the hello-world starter
+    # create a new Gatsby site using the react-redux project starter
     gatsby new gatsby-react-graphql-dato-project https://github.com/rahulbhate/gatsby-react-graphql-dato-project.git
     ```
 
