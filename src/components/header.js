@@ -36,6 +36,7 @@ export default () => (
     `}
     render={data => (
       <div className={styles.banner}>
+        <div className={styles.overlay}></div>
         <header className={styles.container}>
           <Logo to="/" text={data.site.siteMetadata.title} />
           <div className={styles.row}></div>
