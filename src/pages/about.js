@@ -1,16 +1,32 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import Layout from '../components/layout'
-import Title from '../components/title'
+import React from "react"
+import { graphql } from "gatsby"
+//import { HelmetDatoCms } from 'gatsby-source-datocms'
+//import Img from "gatsby-image"
+import Title from "../components/title"
+import Layout from "../components/layout"
 
-export default () => (
+const About = ({ data: { about } }) => (
   <Layout>
-    <Title text='About Me'/>
+    {/* <HelmetDatoCms seo={about.seoMetaTags} /> */}
     <div>
-      <Link to='/'>Home</Link> | <Link to='/about'>About me</Link>
+      <Title text={about.title} />
+      <Title text={about.subtitle} />
+      <p>{about.contents}</p>
     </div>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
   </Layout>
 )
+
+export default About
+
+export const query = graphql`
+  query AboutQuery {
+    about: datoCmsAboutPage {
+      seoMetaTags {
+        ...GatsbyDatoCmsSeoMetaTags
+      }
+      title
+      subtitle
+      contents
+    }
+  }
+`

@@ -1,14 +1,11 @@
 @import '../styles/global';
 
 .container {
-  position: relative;
-  min-height: 100vh;
+  width: $container-width;
+  background-color: $color-pallete-2;
 
   .content {
-    padding-bottom: 100px;
-    margin:0 auto;
-    max-width: $site-width;
-
+    text-align: center;
     a {
       color: $color-pallete-8;
     }

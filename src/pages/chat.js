@@ -4,19 +4,19 @@ import { graphql } from "gatsby"
 import Title from "../components/title"
 import Layout from "../components/layout"
 
-const Index = ({ data: { home } }) => (
+const Chat = ({ data: { chat } }) => (
   <Layout>
-    <Title text={home.title} />
-    <Title text={home.subtitle} />
-    <p>{home.contents}</p>
+    <Title text={chat.title} />
+    <Title text={chat.subtitle} />
+    <p>{chat.contents}</p>
   </Layout>
 )
 
-export default Index
+export default Chat
 
 export const query = graphql`
-  query IndexQuery {
-    home: datoCmsHomePage {
+  query ChatQuery {
+    chat: datoCmsChatPage {
       seoMetaTags {
         ...GatsbyDatoCmsSeoMetaTags
       }

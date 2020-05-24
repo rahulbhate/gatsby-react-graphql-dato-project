@@ -3,41 +3,25 @@ import { Link, StaticQuery, graphql } from "gatsby"
 import styles from "./header.module.scss"
 
 // HeaderLink component
-const HeaderLink = props => (
-  <Link className={styles.link} to={props.to}>
-    {props.text}
-  </Link>
-)
+const HeaderLink = props => {
+  const activeStyle = {
+    color: "#fba394",
+    fontWeight: "bold",
+    textDecoration: "underline",
+  }
+  return (
+    <Link className={styles.link} to={props.to} activeStyle={activeStyle}>
+      {props.text}
+    </Link>
+  )
+}
 
-// HomeButton component
-const HomeButton = props => (
+// LOGO component
+const Logo = props => (
   <Link to={props.to}>
     <div className={styles.button}>{props.text}</div>
   </Link>
 )
-
-// SocialButton component
-const SocialButton = props => {
-  let style = ""
-  let url = ""
-
-  if (props.site === "twitter") {
-    style = styles.buttonTwitter
-    url = "https://twitter.com/" + props.username
-  } else if (props.site === "linkedin") {
-    style = styles.buttonLinkedin
-    url = "https://www.linkedin.com/in/" + props.username
-  } else if (props.site === "github") {
-    style = styles.buttonGithub
-    url = "https://www.github.com/" + props.username
-  }
-
-  return (
-    <a href={url} target="_blank" rel="noopener noreferrer">
-      <div className={style}>{props.children}&nbsp;</div>
-    </a>
-  )
-}
 
 export default () => (
   <StaticQuery
@@ -51,19 +35,17 @@ export default () => (
       }
     `}
     render={data => (
-      <header className={styles.container}>
-        <div className={styles.row}>
-          <HomeButton to="/" text={data.site.siteMetadata.title} />
-          <SocialButton site="github" username="rahulbhate"></SocialButton>
-          <SocialButton site="linkedin" username="rahul-bhate"></SocialButton>
-          <SocialButton site="twitter" username=""></SocialButton>
-        </div>
-
-        <div className={styles.row}>
-          <HeaderLink to="/" text="ARTICLES" />
-          <HeaderLink to="/about" text="ABOUT" />
-        </div>
-      </header>
+      <div className={styles.banner}>
+        <header className={styles.container}>
+          <Logo to="/" text={data.site.siteMetadata.title} />
+          <div className={styles.row}></div>
+          <div className={styles.row}>
+            <HeaderLink to="/" text="Home" />
+            <HeaderLink to="/about" text="How we work" />
+            <HeaderLink to="/chat" text="Let's chat" />
+          </div>
+        </header>
+      </div>
     )}
   />
 )
