@@ -19,7 +19,7 @@ const HeaderLink = props => {
 // LOGO component
 const Logo = props => (
   <Link to={props.to}>
-    <div className={styles.button}>{props.text}</div>
+    <div className={styles.tt}>{props.text}</div>
   </Link>
 )
 
@@ -44,6 +44,7 @@ export default () => (
             <HeaderLink to="/" text="Home" />
             <HeaderLink to="/about" text="How we work" />
             <HeaderLink to="/chat" text="Let's chat" />
+            <HeaderLink to="/courses" text="Courses" />
           </div>
         </header>
       </div>

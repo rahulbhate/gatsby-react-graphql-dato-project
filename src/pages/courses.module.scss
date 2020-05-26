@@ -1,0 +1,49 @@
+@import '../styles/global';
+
+// BLOCK ELEMENT MODIFIER STYLE ... [BEM]
+.cards {
+    width: 25%;
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 10px;
+    background-Color:$color-pallete-6;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    @media screen and (min-width: 1px) and (max-width: 768px) {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+  }
+}
+.cards:hover{
+    background-color:rgba(74, 65, 92, 1);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+    transition: ease-in .4s;
+    .cards__price {
+        color: white;
+    }
+} 
+.cards__image {
+   width: 100%;
+   border-radius: 10px;
+}
+.cards__title {
+   text-align: center;
+   
+}
+.cards__price {
+    color: $color-pallete-1;
+    text-align: center;
+}
+.cards__subtitle {
+    text-align: center;
+}
+.button{
+    background-color:$color-pallete-1 ;
+    color: honeydew;
+    padding: 7px 10px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid white;
+}
