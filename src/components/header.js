@@ -46,6 +46,19 @@ export default () => (
             <HeaderLink to="/chat" text="Let's chat" />
             <HeaderLink to="/courses" text="Courses" />
           </div>
+          <div>
+            The future of property inspections The future of property
+            inspections The convenience of viewing your next home in your own
+            time, agent-free is now a reality. Join our waitlist to get
+            exclusive early access.
+            <form action="/action_page.php">
+              <label for="fname">Email address:</label>
+              <br />
+              <input type="text" id="fname" name="fname" value="John" />
+              <br />
+              <input type="submit" value="Get early access" />
+            </form>
+          </div>
         </header>
       </div>
     )}
