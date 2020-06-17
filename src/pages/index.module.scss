@@ -1,0 +1,8 @@
+@import '../styles/global';
+
+@media (min-width: 768px){
+    section {
+        display: flex;
+        justify-content: space-around;
+    }
+}

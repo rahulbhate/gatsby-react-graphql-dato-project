@@ -1,5 +1,6 @@
 @import '../styles/global';
 
+
 .banner {
   background-image: url('../images/rsz_woman-writing-on-a-notebook-beside-teacup-and-tablet-733856.jpg');
   background-size:cover;
@@ -7,31 +8,27 @@
   position: relative;
 
 .container {
-  .row {
-   width: 75%;
-   float: right;
-   text-align: center;
-   line-height: 80px;
-   background-color: rgba(0, 0, 0, 0.2);
-  }
-
+  display: flex;
+  flex-direction: column;
   .tt {
-    font-size: 30px;
-    color: white;
-    font-weight: bold;
-    width: 25%;
-    background-color: rgba(0, 0, 0, 0.2);
-    float: left;
-    line-height: 80px;
-    
+    //height: 100px;
   }
-
+  .row {
+   height: 100px;
+   background-color: rgba(0, 0, 0, 0.2);
+    nav{
+       display: flex;
+       flex-direction: row;
+       justify-content: space-around;
+       align-items: center;
+    }
+  }
   .link {
     color: $color-pallete-4;
     font-size: 14px;
     font-weight: bold;
     text-decoration: none;
-
+    margin: 20px;
     &:hover {
       color: $color-pallete-2;
       text-decoration:underline 

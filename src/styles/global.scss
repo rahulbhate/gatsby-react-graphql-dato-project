@@ -1,3 +1,8 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+  }
 
 $container-width: 100%;// wrapper ---
 $site-width: 1680px; /// inside wrapper site width margin 0 auto; image width 1680px
@@ -11,3 +16,8 @@ $color-pallete-7: #845c6a;
 $color-pallete-8: #96656c;
 $color-pallete-9: #c47c7c;
 $color-pallet-10: rgba(0, 0, 0, 0.5);
+$color-pallet-11: #393452;
+
+h1, h2{
+    color: $color-pallet-11;
+}

@@ -19,7 +19,17 @@ const HeaderLink = props => {
 // LOGO component
 const Logo = props => (
   <Link to={props.to}>
-    <div className={styles.tt}>{props.text}</div>
+    <div className={styles.tt}>
+      <h1
+        style={{
+          marginLeft: "50px",
+          color: "white",
+          lineHeight: "100px",
+        }}
+      >
+        {props.text}
+      </h1>
+    </div>
   </Link>
 )
 
@@ -38,27 +48,71 @@ export default () => (
       <div className={styles.banner}>
         <div className={styles.overlay}></div>
         <header className={styles.container}>
-          <Logo to="/" text={data.site.siteMetadata.title} />
-          <div className={styles.row}></div>
           <div className={styles.row}>
-            <HeaderLink to="/" text="Home" />
-            <HeaderLink to="/about" text="How we work" />
-            <HeaderLink to="/chat" text="Let's chat" />
-            <HeaderLink to="/courses" text="Courses" />
+            <nav>
+              <div style={{ flexBasis: "50%" }}>
+                <Logo to="/" text={data.site.siteMetadata.title} />
+              </div>
+              <div>
+                <HeaderLink to="/" text="Home" />
+                <HeaderLink to="/about" text="How we work" />
+                <HeaderLink to="/chat" text="Let's chat" />
+              </div>
+              {/* <HeaderLink to="/courses" text="Courses" /> */}
+            </nav>
           </div>
-          <div>
-            The future of property inspections The future of property
-            inspections The convenience of viewing your next home in your own
-            time, agent-free is now a reality. Join our waitlist to get
-            exclusive early access.
-            <form action="/action_page.php">
-              <label for="fname">Email address:</label>
-              <br />
-              <input type="text" id="fname" name="fname" value="John" />
-              <br />
-              <input type="submit" value="Get early access" />
-            </form>
-          </div>
+          <section
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <div style={{ color: "white", margin: "50px", lineHeight: "50px" }}>
+              <h1>uthru</h1>
+              <h2>The future of property inspections</h2>
+              <p style={{ lineHeight: "1.5em" }}>
+                The future of property inspections The convenience of viewing
+                your next home in your own time, agent-free is now a reality.
+                Join our waitlist to get exclusive early access.
+              </p>
+              <form action="#">
+                <input
+                  type="text"
+                  id="fname"
+                  name="fname"
+                  placeholder="Enter your email address"
+                  style={{ padding: "20px", marginTop: "20px", width: "50%" }}
+                />
+                <br />
+                <br />
+                <input
+                  type="submit"
+                  value="I am an agent"
+                  style={{
+                    fontSize: "20px",
+                    padding: "20px 35px",
+                    backgroundColor: "#fba394",
+                    color: "white",
+                    borderRadius: "5px",
+                  }}
+                />
+                <HeaderLink
+                  to="/about"
+                  text="I am a Buyer"
+                  style={{
+                    fontSize: "20px",
+                    padding: "20px 35px",
+                    backgroundColor: "#fba394",
+                    color: "white",
+                    borderRadius: "5px",
+                  }}
+                >
+                  <input type="submit" value="I am a Buyer" />
+                </HeaderLink>
+              </form>
+            </div>
+          </section>
         </header>
       </div>
     )}

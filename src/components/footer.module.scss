@@ -1,13 +1,14 @@
 @import '../styles/global';
 
-$footer-height: 100px;
-
+//$footer-height: 100px;
 .container {
-  background-color: $color-pallete-1;
+  //background-color: $color-pallete-1;
     .footer {
-      line-height: $footer-height;
-      color: $color-pallete-4;
-      text-align: center;
+      // line-height: $footer-height;
+      // color: $color-pallete-4;
+      background-color: $color-pallet-11;
+       display: flex;
+       
     }
 
 }
