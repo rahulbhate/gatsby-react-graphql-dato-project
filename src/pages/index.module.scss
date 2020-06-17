@@ -1,8 +1,35 @@
 @import '../styles/global';
 
+section{
+     //display: flex;
+     //flex-direction: row;
+}
+
+.contactForm {
+    display: "flex";
+    flex-direction: row;
+    //align-items: "flex-start";
+    //justify-content: "space-between";
+}
+.detailsArea {
+    margin-right: 100px;
+    line-height: 50px;
+    
+    input{
+        color: "#34324e"; 
+        font-size: "13px";
+        background-color: #fba394;
+        border: 0px;
+        border-bottom: 1px solid #8d6871;
+        width: 55%;
+        padding: 20px;
+        outline: none;
+    }
+}
 @media (min-width: 768px){
     section {
         display: flex;
         justify-content: space-around;
+        flex-basis: 100%;
     }
 }

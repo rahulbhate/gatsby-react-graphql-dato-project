@@ -108,7 +108,8 @@ export default () => (
                     borderRadius: "5px",
                   }}
                 >
-                  <input type="submit" value="I am a Buyer" />
+                  {/* <input type="submit" value="I am a Buyer" /> */}
+                  <button>Hello</button>
                 </HeaderLink>
               </form>
             </div>
