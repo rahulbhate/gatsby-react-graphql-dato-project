@@ -10,16 +10,14 @@ export default ({ children }) => (
     <Footer>
       <section
         style={{
-          justifyContent: "center",
-          alignItems: "flex-end",
+          display: "flex",
+          justifyContent: "flex-end",
         }}
       >
         <div
           style={{
-            display: "flex",
-            flexWrap: "wrap",
             flexBasis: "50%",
-            alignItems: "center",
+            padding: "20px",
           }}
         >
           <h4 style={{ color: "#e6a192", lineHeight: "3em" }}>
@@ -47,19 +45,24 @@ export default ({ children }) => (
         </div>
         <div
           style={{
-            display: "flex",
-            flexWrap: "wrap",
             flexBasis: "50%",
+            padding: "20px",
           }}
         >
           <h2
             style={{
               fontSize: "40px",
+              textAlign: "right",
             }}
           >
             uthru
           </h2>
-          <ul style={{ listStyle: "none" }}>
+          <ul
+            style={{
+              listStyle: "none",
+              textAlign: "right",
+            }}
+          >
             <li>Privacy</li>
             <li>Terms & Conditions</li>
             <li>&copy; Copyright -2020 uthru.Pty.Limited</li>

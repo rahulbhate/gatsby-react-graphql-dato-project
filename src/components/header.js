@@ -82,7 +82,12 @@ export default () => (
                   id="fname"
                   name="fname"
                   placeholder="Enter your email address"
-                  style={{ padding: "20px", marginTop: "20px", width: "50%" }}
+                  style={{
+                    padding: "20px",
+                    marginTop: "20px",
+                    width: "50%",
+                    outline: "none",
+                  }}
                 />
                 <br />
                 <br />

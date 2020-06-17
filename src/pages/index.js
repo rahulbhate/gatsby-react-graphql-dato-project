@@ -159,23 +159,16 @@ const Index = ({ data: { home } }) => (
       style={{
         display: "flex",
         flexDirection: "column",
-        flexWrap: "wrap",
-        justifyContent: "flex-start",
+        alignItems: "center",
       }}
     >
-      <div
-        style={{
-          flexBasis: "33%",
-        }}
-      >
+      <div>
         <h2>Questions? We’re always open for a chat 4</h2>
-      </div>
 
-      <div style={{ flexBasis: "33%" }}>
         <p>
           We automate property inspections to give you flexibility and save you
-          time while keeping everyone safe.<br></br> If you’d like to know more,
-          feel free to get in touch today.
+          time while keeping everyone safe. If you’d like to know more, feel
+          free to get in touch today.
         </p>
       </div>
     </section>
