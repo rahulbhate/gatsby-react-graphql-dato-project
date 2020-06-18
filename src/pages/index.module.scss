@@ -5,15 +5,11 @@ section{
      //flex-direction: row;
 }
 
-.contactForm {
-    display: "flex";
-    flex-direction: row;
-    //align-items: "flex-start";
-    //justify-content: "space-between";
-}
+
 .detailsArea {
-    margin-right: 100px;
-    line-height: 50px;
+    line-height: 1.9rem;
+    width: 60%;
+    margin-bottom: 20px;
     input{
         color: "#34324e"; 
         font-size: "13px";
@@ -24,7 +20,16 @@ section{
         padding: 20px;
         outline: none;
     }
+  
+    .btnSubmit {
+        background-color: "#fba394";
+         color: "white";
+         padding: "10px 30px";
+         border: "2px solid #FFFFFF";
+     }
 }
+
+
 @media (min-width: 768px){
     section {
         display: flex;

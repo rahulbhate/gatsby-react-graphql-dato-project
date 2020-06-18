@@ -61,17 +61,17 @@ export default () => (
               {/* <HeaderLink to="/courses" text="Courses" /> */}
             </nav>
           </div>
-          <section
+          <div
             style={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
+              //padding: "100px 300px ",
+
+              marginLeft: "300px",
             }}
           >
-            <div style={{ color: "white", margin: "50px", lineHeight: "50px" }}>
+            <div style={{ lineHeight: "50px" }}>
               <h1>uthru</h1>
               <h2>The future of property inspections</h2>
-              <p style={{ lineHeight: "1.5em" }}>
+              <p style={{ lineHeight: "1.5em", width: "50%" }}>
                 The future of property inspections The convenience of viewing
                 your next home in your own time, agent-free is now a reality.
                 Join our waitlist to get exclusive early access.
@@ -97,6 +97,7 @@ export default () => (
                   style={{
                     fontSize: "20px",
                     padding: "20px 35px",
+                    outline: "none",
                     backgroundColor: "#fba394",
                     color: "white",
                     borderRadius: "5px",
@@ -118,7 +119,7 @@ export default () => (
                 </HeaderLink>
               </form>
             </div>
-          </section>
+          </div>
         </header>
       </div>
     )}
