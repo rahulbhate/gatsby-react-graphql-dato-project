@@ -14,28 +14,36 @@ import {
 //https://5eca132a40c162e62f5de8a4--eloquent-booth-2bc360.netlify.app/
 const About = ({ data: { about } }) => (
   <Layout>
-    <section
+    <div
       style={{
-        padding: "30px 200px 50px 10px",
-        flexDirection: "column",
-        justifyContent: "flex-start",
+        padding: "100px 0px ",
       }}
     >
-      <div
+      <h2
         style={{
-          flexBasis: "70%",
+          width: "30%",
+          color: "#34324e",
+          lineHeight: "2.0em",
+          textAlign: "justify",
+          marginLeft: "250px",
         }}
       >
-        <h2 style={{ color: "#34324e" }}>
-          Finding your dream home has never been easier or safer
-        </h2>
-      </div>
-      <p style={{ lineHeight: "1.5em", flexBasis: "60%" }}>
+        Finding your dream home has never been easier or safer
+      </h2>
+      <p
+        style={{
+          width: "30%",
+          lineHeight: "1.9em",
+          flexBasis: "60%",
+          textAlign: "justify",
+          marginLeft: "250px",
+        }}
+      >
         Crowded open homes are a thing of the past. Inspect vacant properties
         independently, at your own convenience with u-thru. No agents, no set
         times, no hassle.
       </p>
-    </section>
+    </div>
     <section
       style={{
         backgroundColor: "white",
@@ -155,72 +163,61 @@ const About = ({ data: { about } }) => (
         </p>
       </div>
     </section>
-    <section
+    <div
       style={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
+        padding: "100px 0px ",
       }}
     >
-      <div>
-        <h2>Questions? We’re always open for a chat 4</h2>
+      <h2
+        style={{
+          width: "30%",
+          color: "#34324e",
+          lineHeight: "2.0em",
+          textAlign: "justify",
+          marginLeft: "250px",
+        }}
+      >
+        Finding your dream home has never been easier or safer
+      </h2>
+      <p
+        style={{
+          width: "30%",
+          lineHeight: "1.9em",
+          flexBasis: "60%",
+          textAlign: "justify",
+          marginLeft: "250px",
+        }}
+      >
+        Crowded open homes are a thing of the past. Inspect vacant properties
+        independently, at your own convenience with u-thru. No agents, no set
+        times, no hassle.
+      </p>
+    </div>
 
-        <p>
-          We automate property inspections to give you flexibility and save you
-          time while keeping everyone safe. If you’d like to know more, feel
-          free to get in touch today.
-        </p>
-      </div>
-    </section>
-    <section className={styles.contactForm}>
-      <div>
-        <form
+    <div className={styles.detailsArea}>
+      <form>
+        <input type="text" id="fname" name="fname" placeholder="First Name" />
+        <input type="text" id="lname" name="lname" placeholder="Last Name" />
+        <input
+          type="text"
+          id="org"
+          name="organisation"
+          placeholder="Organization"
+        />
+        <input type="email" id="email" name="email" placeholder="Email" />
+        <input type="text" id="phone" name="phone" placeholder="Phone" />
+        <input
+          type="submit"
+          value="Submit"
           style={{
-            textAlign: "left",
-            fontSize: "11px",
+            backgroundColor: "#fba394",
             color: "white",
+            padding: "10px 30px",
+            border: "2px solid #FFFFFF",
           }}
-        >
-          <div className={styles.detailsArea}>
-            <input
-              type="text"
-              id="fname"
-              name="fname"
-              placeholder="Rahul Bhate"
-            />
-
-            <input
-              type="text"
-              id="lname"
-              name="lname"
-              placeholder="Last Name"
-            />
-
-            <input
-              type="text"
-              id="org"
-              name="organisation"
-              placeholder="Organization"
-            />
-
-            <input type="email" id="email" name="email" placeholder="Email" />
-
-            <input type="text" id="phone" name="phone" placeholder="Phone" />
-
-            <input
-              type="submit"
-              value="Submit"
-              style={{
-                backgroundColor: "#fba394",
-                color: "white",
-                padding: "10px 30px",
-                border: "2px solid #FFFFFF",
-              }}
-            />
-          </div>
-        </form>
-      </div>
-    </section>
+        />
+      </form>
+    </div>
   </Layout>
 )
 
