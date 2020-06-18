@@ -1,11 +1,9 @@
 @import '../styles/global';
 
 section{
-     //display: flex;
-     //flex-direction: row;
+    // display: flex;
+    
 }
-
-
 .detailsArea {
     line-height: 1.9rem;
     width: 60%;
@@ -20,7 +18,12 @@ section{
         padding: 20px;
         outline: none;
     }
-  
+    input[type='submit']{
+        background-color: #fba394;
+        color: white;
+        padding: 10px 30px;
+        border: 2px solid #FFFFFF;
+    }
     .btnSubmit {
         background-color: "#fba394";
          color: "white";
@@ -28,12 +31,95 @@ section{
          border: "2px solid #FFFFFF";
      }
 }
+.sectionTwo{
+    margin: 100px 0px 112px 165px;
+    h2{
+        width: 30%;
+        color: #34324e;
+        line-height: 2.0em;
+        text-align: left;
+    }
+    p{
+        width: 30%;
+        line-height: 1.9em;
+        text-align: left;
+    }
+   
+}
+.howWorks{
+    background-color: white;
+    padding: 30px 200px 50px 200px;
+    margin: 0px 50px 0px 50px;
+    h2{
+        color: #e49c8c;
+        line-height: 1.7em;
+        font-size: 20px;
+        width: 28%;
+        margin: auto;
+        font-size: 35px;
+    }
+    p{
+        color: #373251;
+        line-height: 1.7em;
+        font-size: 20px;
+        width: 60%;
+        margin: auto;
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    ul{
+        list-style: none;
+        width: 30%;
+        margin: auto;
+    }
+}
+.bulletHeadings{
+    color: #fba394;
+    margin-bottom: 15px;
+}
+.bulletContents{
+    color: #373251;
+    margin-bottom: 55px;
+}
 
+.sectionColumns{
+    padding: 50px 0px 50px 0px;
+    margin: 0px 50px 50px 50px;
+    background-color: #393452;
+    div{
+        flex-basis: 30%;
+        padding-bottom: 50px;
+        h2{
+            color: #fba394;
+        }
+    }
 
-@media (min-width: 768px){
-    section {
+}
+@media (max-width: 768px){
+    .sectionTwo {
+        margin: 20px 0px 20px 0px;
+        h2, p{
+            width: 100%;
+        }   
+    }
+}
+@media (max-width: 768px){
+    .howWorks {
+        padding: 20px 0px 20px 0px;
+        margin: 0px;
+        ul,h2, p{
+            width: 100%;
+        }
+    }
+}
+@media (max-width: 768px){
+    .sectionColumns {
+        margin: 0px;
+    }
+    .sectionColumns div {
         display: flex;
         justify-content: space-around;
         flex-basis: 100%;
+        flex-direction: column;
     }
 }

@@ -14,180 +14,89 @@ import {
 //https://5eca132a40c162e62f5de8a4--eloquent-booth-2bc360.netlify.app/
 const Index = ({ data: { home } }) => (
   <Layout>
-    <div
-      style={{
-        padding: "100px 0px ",
-      }}
-    >
-      <h2
-        style={{
-          width: "30%",
-          color: "#34324e",
-          lineHeight: "2.0em",
-          textAlign: "justify",
-          marginLeft: "250px",
-        }}
-      >
-        Finding your dream home has never been easier or safer
-      </h2>
-      <p
-        style={{
-          width: "30%",
-          lineHeight: "1.9em",
-          flexBasis: "60%",
-          textAlign: "justify",
-          marginLeft: "250px",
-        }}
-      >
+    <div className={styles.sectionTwo}>
+      <h2>Finding your dream home has never been easier or safer</h2>
+      <p>
         Crowded open homes are a thing of the past. Inspect vacant properties
         independently, at your own convenience with u-thru. No agents, no set
         times, no hassle.
       </p>
     </div>
-    <section
-      style={{
-        backgroundColor: "white",
-        padding: "30px 200px 50px 200px",
-        margin: "0px 50px 0px 50px",
-        flexWrap: "wrap",
-      }}
-    >
-      <div
-        style={{
-          flexBasis: "60%",
-        }}
-      >
-        <h2 style={{ color: "#e49c8c" }}>Here’s how it works</h2>
+    <section className={styles.howWorks}>
+      <div>
+        <h2>Here’s how it works</h2>
       </div>
-      <p
-        style={{
-          color: "#373251",
-          lineHeight: "1.7em",
-          fontSize: "20px",
-          flexBasis: "60%",
-        }}
-      >
+      <p>
         We simplify the process for everyone; saving agents time and money and
         making it easier for people to find the home of their dreams
       </p>
-
-      <ul
-        style={{
-          listStyle: "none",
-          flexBasis: "60%",
-        }}
-      >
-        <li style={{ color: "#e4a08c" }}>
+      <ul>
+        <li className={styles.bulletHeadings}>
           01 / <b>Join</b>
         </li>
-        <li style={{ color: "#9a9a9a", lineHeight: "3.7em" }}>
-          under three minutes
-        </li>
-        <li style={{ color: "#e4a08c" }}>
+        <li className={styles.bulletContents}>under three minutes</li>
+        <li className={styles.bulletHeadings}>
           02 / <b>Verify</b>
         </li>
-        <li style={{ color: "#9a9a9a", lineHeight: "3.7em" }}>
+        <li className={styles.bulletContents}>
           your identity once for $9.95 and access a months’ worth of unlimited
           inspections
         </li>
-        <li style={{ color: "#e4a08c" }}>
+        <li className={styles.bulletHeadings}>
           03 / <b>Book</b>
         </li>
-        <li style={{ color: "#9a9a9a", lineHeight: "3.7em" }}>
+        <li className={styles.bulletContents}>
           Book your preferred time slot for a private, agent-free inspection
         </li>
-        <li style={{ color: "#e4a08c" }}>
+        <li className={styles.bulletHeadings}>
           04 / <b>Access</b>
         </li>
-        <li style={{ color: "#9a9a9a", lineHeight: "3.7em" }}>
+        <li className={styles.bulletContents}>
           Access the property lockbox with a code sent to your phone
         </li>
-        <li style={{ color: "#e4a08c" }}>
+        <li className={styles.bulletHeadings}>
           05 / <b>Apply</b>
         </li>
-        <li style={{ color: "#9a9a9a", lineHeight: "3.7em" }}>
+        <li className={styles.bulletContents}>
           They apply for their dream home!
         </li>
       </ul>
     </section>
-    <section
-      style={{
-        padding: "50px 0px 50px 0px",
-        margin: "0px 50px 50px 50px",
-        backgroundColor: "#393452",
-      }}
-    >
-      <div
-        style={{
-          flexBasis: "30%",
-          paddingBottom: "50px",
-        }}
-      >
+    <section className={styles.sectionColumns}>
+      <div>
         <span>
           <FaMobile size={48} color={"#fba394"} />
         </span>
-        <h2 style={{ color: "#fba394" }}>Safe</h2>
+        <h2>Safe</h2>
         <p>
           Sign up easily and unlock a world of agent-free vacant property
           inspections.
         </p>
       </div>
-      <div
-        style={{
-          flexBasis: "30%",
-          paddingBottom: "50px",
-        }}
-      >
+      <div>
         <span>
           <FaClock size={48} color={"#fba394"} />
         </span>
 
-        <h2 style={{ color: "#fba394" }}>Efficient</h2>
+        <h2>Efficient</h2>
         <p>
           Instantly schedule independent inspections at times that work for you.
         </p>
       </div>
-      <div
-        style={{
-          flexBasis: "30%",
-          paddingBottom: "50px",
-        }}
-      >
+      <div>
         <span>
           <FaHandHoldingHeart color={"#fba394"} size={48} />
         </span>
-        <h2 style={{ color: "#fba394" }}>Convenient</h2>
+        <h2>Convenient</h2>
         <p>
           Gives you and your loved ones private access to each property, keeping
           everyone safe.
         </p>
       </div>
     </section>
-    <div
-      style={{
-        padding: "100px 0px ",
-      }}
-    >
-      <h2
-        style={{
-          width: "30%",
-          color: "#34324e",
-          lineHeight: "2.0em",
-          textAlign: "justify",
-          marginLeft: "250px",
-        }}
-      >
-        Finding your dream home has never been easier or safer
-      </h2>
-      <p
-        style={{
-          width: "30%",
-          lineHeight: "1.9em",
-          flexBasis: "60%",
-          textAlign: "justify",
-          marginLeft: "250px",
-        }}
-      >
+    <div className={styles.sectionTwo}>
+      <h2>Finding your dream home has never been easier or safer</h2>
+      <p>
         Crowded open homes are a thing of the past. Inspect vacant properties
         independently, at your own convenience with u-thru. No agents, no set
         times, no hassle.
@@ -206,16 +115,7 @@ const Index = ({ data: { home } }) => (
         />
         <input type="email" id="email" name="email" placeholder="Email" />
         <input type="text" id="phone" name="phone" placeholder="Phone" />
-        <input
-          type="submit"
-          value="Submit"
-          style={{
-            backgroundColor: "#fba394",
-            color: "white",
-            padding: "10px 30px",
-            border: "2px solid #FFFFFF",
-          }}
-        />
+        <input type="submit" value="Submit" />
       </form>
     </div>
   </Layout>

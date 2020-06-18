@@ -14,103 +14,56 @@ import {
 //https://5eca132a40c162e62f5de8a4--eloquent-booth-2bc360.netlify.app/
 const About = ({ data: { about } }) => (
   <Layout>
-    <div
-      style={{
-        padding: "100px 0px ",
-      }}
-    >
-      <h2
-        style={{
-          width: "30%",
-          color: "#34324e",
-          lineHeight: "2.0em",
-          textAlign: "justify",
-          marginLeft: "250px",
-        }}
-      >
-        Finding your dream home has never been easier or safer
-      </h2>
-      <p
-        style={{
-          width: "30%",
-          lineHeight: "1.9em",
-          flexBasis: "60%",
-          textAlign: "justify",
-          marginLeft: "250px",
-        }}
-      >
+    <div className={styles.sectionTwo}>
+      <h2>Finding your dream home has never been easier or safer</h2>
+      <p>
         Crowded open homes are a thing of the past. Inspect vacant properties
         independently, at your own convenience with u-thru. No agents, no set
         times, no hassle.
       </p>
     </div>
-    <section
-      style={{
-        backgroundColor: "white",
-        padding: "30px 200px 50px 200px",
-        margin: "0px 50px 0px 50px",
-        flexWrap: "wrap",
-      }}
-    >
-      <div
-        style={{
-          flexBasis: "60%",
-        }}
-      >
-        <h2 style={{ color: "#e49c8c" }}>Here’s how it works</h2>
+    <section className={styles.howWorks}>
+      <div>
+        <h2>Here’s how it works</h2>
       </div>
-      <p
-        style={{
-          color: "#373251",
-          lineHeight: "1.7em",
-          fontSize: "20px",
-          flexBasis: "60%",
-        }}
-      >
+      <p>
         We simplify the process for everyone; saving agents time and money and
         making it easier for people to find the home of their dreams
       </p>
-
-      <ul
-        style={{
-          listStyle: "none",
-          flexBasis: "60%",
-        }}
-      >
-        <li style={{ color: "#e4a08c" }}>
+      <ul>
+        <li className={styles.bulletHeadings}>
           01 / <b>Join</b>
         </li>
-        <li style={{ color: "#9a9a9a", lineHeight: "3.7em" }}>
-          under three minutes
-        </li>
-        <li style={{ color: "#e4a08c" }}>
+        <li className={styles.bulletContents}>under three minutes</li>
+        <li className={styles.bulletHeadings}>
           02 / <b>Verify</b>
         </li>
-        <li style={{ color: "#9a9a9a", lineHeight: "3.7em" }}>
+        <li className={styles.bulletContents}>
           your identity once for $9.95 and access a months’ worth of unlimited
           inspections
         </li>
-        <li style={{ color: "#e4a08c" }}>
+        <li className={styles.bulletHeadings}>
           03 / <b>Book</b>
         </li>
-        <li style={{ color: "#9a9a9a", lineHeight: "3.7em" }}>
+        <li className={styles.bulletContents}>
           Book your preferred time slot for a private, agent-free inspection
         </li>
-        <li style={{ color: "#e4a08c" }}>
+        <li className={styles.bulletHeadings}>
           04 / <b>Access</b>
         </li>
-        <li style={{ color: "#9a9a9a", lineHeight: "3.7em" }}>
+        <li className={styles.bulletContents}>
           Access the property lockbox with a code sent to your phone
         </li>
-        <li style={{ color: "#e4a08c" }}>
+        <li className={styles.bulletHeadings}>
           05 / <b>Apply</b>
         </li>
-        <li style={{ color: "#9a9a9a", lineHeight: "3.7em" }}>
+        <li className={styles.bulletContents}>
           They apply for their dream home!
         </li>
       </ul>
     </section>
     <section
+      className={styles.sectionColumns}
       style={{
         padding: "50px 0px 50px 0px",
         margin: "0px 50px 50px 50px",
@@ -163,31 +116,9 @@ const About = ({ data: { about } }) => (
         </p>
       </div>
     </section>
-    <div
-      style={{
-        padding: "100px 0px ",
-      }}
-    >
-      <h2
-        style={{
-          width: "30%",
-          color: "#34324e",
-          lineHeight: "2.0em",
-          textAlign: "justify",
-          marginLeft: "250px",
-        }}
-      >
-        Finding your dream home has never been easier or safer
-      </h2>
-      <p
-        style={{
-          width: "30%",
-          lineHeight: "1.9em",
-          flexBasis: "60%",
-          textAlign: "justify",
-          marginLeft: "250px",
-        }}
-      >
+    <div className={styles.sectionTwo}>
+      <h2>Finding your dream home has never been easier or safer</h2>
+      <p>
         Crowded open homes are a thing of the past. Inspect vacant properties
         independently, at your own convenience with u-thru. No agents, no set
         times, no hassle.
