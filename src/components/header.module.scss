@@ -50,6 +50,18 @@
 @media (max-width: 768px){
   .banner{
     height: 80vh;
+    .container {
+      .row{
+        background-color: rgba(0, 0, 0, 0.2);
+        height: 140px;
+        nav{
+          flex-direction: column;
+          width: 100%;
+          align-items: center;
+         
+        }
+      }
+    }
     .headerSectionContents {
       margin-left: 0px !important;
       margin: 20px 0px 20px 0px;
@@ -76,4 +88,3 @@
   z-index: 1;
   background-color:rgba(74, 65, 92, 1);
 }
-

@@ -8,16 +8,10 @@ export default ({ children }) => (
     <Header />
     <div className={styles.content}>{children}</div>
     <Footer>
-      <section
-        style={{
-          display: "flex",
-          justifyContent: "flex-end",
-        }}
-      >
         <div
           style={{
-            flexBasis: "50%",
             padding: "20px",
+            flexBasis: '50%',
           }}
         >
           <h4 style={{ color: "#e6a192", lineHeight: "3em" }}>
@@ -45,8 +39,10 @@ export default ({ children }) => (
         </div>
         <div
           style={{
-            flexBasis: "50%",
+            flexBasis: "50%",       
             padding: "20px",
+            justifyContent:'flex-end',
+            justifyContent:'flex-end'
           }}
         >
           <h2
@@ -68,7 +64,6 @@ export default ({ children }) => (
             <li>&copy; Copyright -2020 uthru.Pty.Limited</li>
           </ul>
         </div>
-      </section>
     </Footer>
   </div>
 )
