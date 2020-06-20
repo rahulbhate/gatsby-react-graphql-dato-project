@@ -3,27 +3,32 @@
 
 .banner {
   background-image: url('../images/rsz_woman-writing-on-a-notebook-beside-teacup-and-tablet-733856.jpg');
-  background-size:cover;
-  height: 60vh;
+  height: 80vh;
   position: relative;
-
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
     .container {
       display: flex;
       flex-direction: column;
-
       .row {
-      height: 100px;
-      background-color: rgba(0, 0, 0, 0.2);
+      height: 120px;
         nav{
           display: flex;
           flex-direction: row;
           justify-content: space-around;
           align-items: center;
+          position: fixed;
+          //background-color: rgba(0, 0, 0, 0.2);
+          width: 100%;
         }
       }
       .link {
         color: $color-pallete-4;
-        font-size: 14px;
+        font-size: 13pt;
         font-weight: bold;
         text-decoration: none;
         margin: 20px;
@@ -38,41 +43,126 @@
 
       }
       .headerSectionContents{
+        .bounce {
+          position: relative;
+          top: 50px;
+          animation: bounce 2s infinite;
+        }
+        
+        @keyframes bounce {
+          0%, 20%, 50%, 80%, 100% {
+            transform: translateY(0);
+          }
+          40% {
+            transform: translateY(-30px);
+          }
+          60% {
+            transform: translateY(-15px);
+          }
+        }
         margin-left: 300px;
+       .spantitlemain {
+         font-size: 40pt;
+       }
+        .spanFuture{
+          color: white;
+          font-weight: 'bolder';
+        }
+        .spantitle{
+          color: #fba394;
+          font-size: 28pt;
+          font-weight: 'bold';
+        }
+       
+        .spansection{
+          text-decoration: underline;
+          font-size: 40pt;
+          font-weight: bolder;
+          color: #fba394;
+        }
         h1,h2,p{
           line-height: 1.5em;
+          font-size: 22pt;
           width: 50%;
         }
       }
   
     }
 }
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media (max-width: 1366px) {
+  .banner {
+    background-attachment: scroll;
+  }
+}
 @media (max-width: 768px){
   .banner{
-    height: 80vh;
+    height: 90vh;
     .container {
       .row{
-        background-color: rgba(0, 0, 0, 0.2);
+        //background-color: rgba(0, 0, 0, 0.2);
         height: 140px;
         nav{
           flex-direction: column;
           width: 100%;
           align-items: center;
-         
         }
       }
     }
     .headerSectionContents {
       margin-left: 0px !important;
       margin: 20px 0px 20px 0px;
-      h1,h2,p{
-          width: 100% !important;
+     h1{
+          font-size: 15pt !important;
+          text-align: center;
+      }
+      h2{
+        font-size: 16pt !important;
+        line-height: 3.0em !important;
+        text-align: center;
+      }
+      p{
+        font-size: 13pt !important;
+        text-align: center;
       }
   }
   }
   
 }
-
+@media (max-width: 968px){
+  .banner{
+    height: 80vh;
+    .container {
+      .row{
+        //background-color: rgba(0, 0, 0, 0.2);
+        height: 140px;
+        nav{
+          flex-direction: column;
+          width: 100%;
+          align-items: center;
+        }
+      }
+    }
+    .headerSectionContents {
+      margin-left: 0px !important;
+      margin: 20px 0px 20px 0px;
+     h1{
+          font-size: 18pt !important;
+          text-align: center;
+      }
+      h2{
+        font-size: 16pt !important;
+        line-height: 3.0em !important;
+        text-align: center;
+      }
+      p{
+        font-size: 14pt !important;
+        text-align: center;
+      }
+  }
+  }
+  
+}
 
 .banner > * {
   position: relative;

@@ -1,9 +1,9 @@
 body {
     /* Lato poppins Roboto*/
     font-family: 'Lato';
-    font-size: 17px;
     color: white;
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
  }
  

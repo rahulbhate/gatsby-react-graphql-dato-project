@@ -2,13 +2,13 @@
 
 .container {
   width: $container-width;
-  background-color: $color-pallete-2;
+  background-color: $color-pallet-background;
   .content {
     text-align: center;
     a {
-      color: $color-pallete-8;
+      color: white;
     }
-
+ 
     @media screen and (min-width: 1px) and (max-width: 1000px) {
       padding-left: 20px;
       padding-right: 20px;

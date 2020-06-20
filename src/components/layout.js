@@ -8,34 +8,30 @@ export default ({ children }) => (
     <Header />
     <div className={styles.content}>{children}</div>
     <Footer>
-        <div
-          style={{
-            padding: "20px",
-            flexBasis: '50%',
-          }}
-        >
-          <h4 style={{ color: "#e6a192", lineHeight: "3em" }}>
-            For more information please contact<br></br>
+        <div>
+          <h4>
+            For more information please contact<br />
             <a
               href="mailto:hello@uthru.io"
-              style={{ color: "white", fontSize: "25px", fontWeight: "normal" }}
+              style={{ color: "white", fontSize: "26pt", fontWeight: "normal", textDecoration:'none' }}
             >
               hello@uthru.io
             </a>
           </h4>
-          <p>
+          <p className={styles.footerlinks}>
             <a
               href="#"
               style={{
                 color: "white",
                 borderBottom: "2px solid #e6a192",
-                paddingBottom: "2px",
+                fontSize: '20pt',
+                paddingBottom: "2px", 
                 textDecoration: "none",
               }}
             >
               Back To Top
             </a>
-          </p>
+            </p>
         </div>
         <div
           style={{
@@ -45,22 +41,15 @@ export default ({ children }) => (
             justifyContent:'flex-end'
           }}
         >
-          <h2
-            style={{
-              fontSize: "40px",
-              textAlign: "right",
-            }}
-          >
-            uthru
-          </h2>
+        <h1 style={{fontSize: '35pt', textAlign:'right' }}> <span style={{ color: '#fba394',
+          fontSize: '28pt',
+          textDecoration: 'underline',
+          fontWeight: 'bold'}}>U</span>thru</h1>
           <ul
-            style={{
-              listStyle: "none",
-              textAlign: "right",
-            }}
+          className={styles.footer}
           >
-            <li>Privacy</li>
-            <li>Terms & Conditions</li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
             <li>&copy; Copyright -2020 uthru.Pty.Limited</li>
           </ul>
         </div>

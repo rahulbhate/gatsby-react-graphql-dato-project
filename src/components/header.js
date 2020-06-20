@@ -1,6 +1,9 @@
 import React from "react"
 import { Link, StaticQuery, graphql } from "gatsby"
 import styles from "./header.module.scss"
+import {
+  FaArrowDown,
+} from "react-icons/fa"
 
 // HeaderLink component
 const HeaderLink = props => {
@@ -15,20 +18,23 @@ const HeaderLink = props => {
     </Link>
   )
 }
-
 // LOGO component
 const Logo = props => (
-  <Link to={props.to}>
-    <div className={styles.tt}>
+  <Link to={props.to} style={{textDecoration: 'none'}}>
+    <div>
       <h1
         style={{
-          marginLeft: "50px",
           color: "white",
           lineHeight: "100px",
+          textDecoration: 'none'
         }}
       >
-        {props.text}
+      <span style={{ color: '#fba394',
+          fontSize: '28pt',
+          textDecoration: 'underline',
+          fontWeight: 'bold'}}>U</span>thru
       </h1>
+     
     </div>
   </Link>
 )
@@ -50,8 +56,8 @@ export default () => (
         <header className={styles.container}>
           <div className={styles.row}>
             <nav>
-              <div style={{ flexBasis: "50%" }}>
-                <Logo to="/" text={data.site.siteMetadata.title} />
+              <div style={{ flexBasis: "60%", fontSize:'25px' }}>
+                <Logo to="/" text={data.site.siteMetadata.title} style={{ textDecoration: 'none'}}/>
               </div>
               <div>
                 <HeaderLink to="/" text="Home" />
@@ -62,14 +68,15 @@ export default () => (
             </nav>
           </div>
           <div className={styles.headerSectionContents}>
-            <h1>uthru</h1>
-            <h2>The future of property inspections</h2>
+            <h1 className={styles.spantitlemain}><span className={styles.spansection}>U</span>thru</h1>
+            <h2 className={styles.spantitle}>The <span className={styles.spanFuture}>future</span> of property inspections</h2>
             <p>
               The future of property inspections The convenience of viewing your
               next home in your own time, agent-free is now a reality. Join our
               waitlist to get exclusive early access.
             </p>
-            <form action="#">
+            <FaArrowDown size={48}  className={styles.bounce}/>
+            {/* <form action="#">
               <input
                 type="text"
                 id="fname"
@@ -108,9 +115,9 @@ export default () => (
                 }}
               >
                 {/* <input type="submit" value="I am a Buyer" /> */}
-                <button>Hello</button>
-              </HeaderLink>
-            </form>
+                {/* <button>Hello</button> */}
+              {/* </HeaderLink> */}
+            {/* </form> */} 
           </div>
         </header>
       </div>
