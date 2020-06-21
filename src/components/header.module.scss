@@ -22,12 +22,12 @@
           justify-content: space-around;
           align-items: center;
           position: fixed;
-          //background-color: rgba(0, 0, 0, 0.2);
+          background-color: rgba(0, 0, 0, 0.2);
           width: 100%;
         }
       }
       .link {
-        color: $color-pallete-4;
+        color: $color-pallet-background;
         font-size: 13pt;
         font-weight: bold;
         text-decoration: none;
@@ -138,7 +138,7 @@
     height: 40vh;
     .container {
       .row{
-        //background-color: rgba(0, 0, 0, 0.2);
+        background-color: rgba(0, 0, 0, 0.2);
         height: 140px;
         nav{
           flex-direction: column;
@@ -146,6 +146,9 @@
           align-items: center;
         }
       }
+     .link {
+       padding: 0px !important;
+     }
     }
     .headerSectionContents {
       margin-left: 0px !important;
@@ -157,10 +160,11 @@
           display: none;
       }
       h2{
-       display: none;
+        display: none;
       }
       p{
-        display: none;
+        font-size: 10px;
+        text-align: center;
       }
   }
   }
