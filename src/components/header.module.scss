@@ -117,16 +117,16 @@
     }
      h1{
           font-size: 12pt !important;
-          text-align: center;
+          width: 100% !important;
       }
       h2{
         font-size: 14pt !important;
         line-height: 1.0em !important;
-        text-align: center;
+        width: 100% !important;
       }
       p{
         font-size: 13pt !important;
-        text-align: center;
+        width: 100% !important;
       }
   }
   }
@@ -157,18 +157,55 @@
      display: none;
     }
      h1{
-          display: none;
+      width: 100% !important;
       }
       h2{
-        display: none;
+        width: 100% !important;
       }
       p{
         font-size: 10px;
-        text-align: center;
+        width: 100% !important;
+       
       }
   }
   }
-  
+}
+@media (max-width: 320px){
+  .banner{
+    height: 40vh;
+    .container {
+      .row{
+        background-color: rgba(0, 0, 0, 0.2);
+        height: 140px;
+        nav{
+          flex-direction: column;
+          width: 100%;
+          align-items: center;
+        }
+      }
+     .link {
+       padding: 0px !important;
+     }
+    }
+    .headerSectionContents {
+      margin-left: 0px !important;
+      margin: 20px 0px 20px 0px;
+    .bounce{
+     display: none;
+    }
+     h1{
+      width: 100% !important;
+      }
+      h2{
+        width: 100% !important;
+      }
+      p{
+        font-size: 8px !important;
+        width: 100% !important;
+        line-height: 1.0em !important;
+      }
+  }
+  }
 }
 @media (max-width: 968px){
   .banner{
