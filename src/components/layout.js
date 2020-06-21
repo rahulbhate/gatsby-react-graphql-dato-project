@@ -2,10 +2,11 @@ import React from "react"
 import styles from "./layout.module.scss"
 import Header from "./header.js"
 import Footer from "./footer.js"
-
+import Navigation from "./navigation.js"
+import ScrollToTop from "./ScrollToTop.js"
 export default ({ children }) => (
   <div className={styles.container}>
-    <Header />
+    <ScrollToTop />
     <div className={styles.content}>{children}</div>
     <Footer>
         <div>

@@ -12,18 +12,11 @@ import {
 } from "react-icons/fa"
 //https://5eca132a40c162e62f5de8a4--eloquent-booth-2bc360.netlify.app/
 const About = ({ data: { about } }) => (
+  <>
   <Layout>
-    <div className={styles.sectionTwo}>
-      <hr className={styles.special} />
-      <h2>Finding your dream home has never been easier or safer</h2>
-      <p>
-        Crowded open homes are a thing of the past. Inspect vacant properties
-        independently, at your own convenience with u-thru. No agents, no set
-        times, no hassle.
-      </p>
-    </div>
+  
     <section className={styles.howWorks}>
-      <div>
+      <div id="about">
         <hr className={styles.rounded} />
         <h2>Here’s how it works</h2>
       </div>
@@ -95,32 +88,8 @@ const About = ({ data: { about } }) => (
         </p>
       </div>
     </section>
-    <div className={styles.sectionFive}>
-      <hr className={styles.special} />
-      <h2>Finding your dream home has never been easier or safer</h2>
-      <p>
-        Crowded open homes are a thing of the past. Inspect vacant properties
-        independently, at your own convenience with u-thru. No agents, no set
-        times, no hassle.
-      </p>
-    </div>
-
-    <div className={styles.detailsArea}>
-      <form>
-        <input type="text" id="fname" name="fname" placeholder="First Name" />
-        <input type="text" id="lname" name="lname" placeholder="Last Name" />
-        <input
-          type="text"
-          id="org"
-          name="organisation"
-          placeholder="Organization"
-        />
-        <input type="email" id="email" name="email" placeholder="Email" />
-        <input type="text" id="phone" name="phone" placeholder="Phone" />
-        <input type="submit" value="Submit" />
-      </form>
-    </div>
   </Layout>
+  </>
 )
 
 export default About

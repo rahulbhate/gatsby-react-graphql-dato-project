@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 //import Img from "gatsby-image"
+
 import styles from "./index.module.scss"
 import Title from "../components/title"
 import Layout from "../components/layout"
@@ -23,7 +24,7 @@ const Index = ({ data: { home } }) => (
       </p>
     </div>
     <section className={styles.howWorks}>
-      <div>
+      <div id="about">
         <hr className={styles.rounded} />
         <h2>Here’s how it works</h2>
       </div>
@@ -95,7 +96,7 @@ const Index = ({ data: { home } }) => (
         </p>
       </div>
     </section>
-    <div className={styles.sectionFive}>
+    <div className={styles.sectionFive} id="chat">
       <hr className={styles.special} />
       <h2>Finding your dream home has never been easier or safer</h2>
       <p>
@@ -112,9 +113,7 @@ const Index = ({ data: { home } }) => (
         <input type="text" id="fieldjrkini" maxlength="200" name="cm-f-jrkini" placeholder="Organization"/>
         <input autocomplete="Email" className="js-cm-email-input qa-input-email" id="fieldEmail" maxlength="200" name="cm-ydukhrj-ydukhrj" required="" type="email"  placeholder="Email" />
         <input id="fieldjrkind" maxlength="200" name="cm-f-jrkind" type="number" placeholder="Phone" />
-        <div style={{ textAlign: 'left', paddingTop:'30px'}}>
-          <input aria-required="" id="cm-privacy-consent" name="cm-privacy-consent" required="" type="checkbox" /><label for="cm-privacy-consent">I agree</label>
-        </div>
+        <input aria-required="" id="cm-privacy-consent" name="cm-privacy-consent" required="" type="checkbox" /><label for="cm-privacy-consent" style={{display: 'block'}}>I agree</label>
         <div>
         <input type="submit" value="Submit" />
         </div>

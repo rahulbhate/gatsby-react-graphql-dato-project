@@ -29,7 +29,7 @@ const Logo = props => (
           textDecoration: 'none'
         }}
       >
-      <span style={{ color: '#fba394',
+      <span style={{ 
           fontSize: '28pt',
           textDecoration: 'underline',
           fontWeight: 'bold'}}>U</span>thru
@@ -64,7 +64,6 @@ export default () => (
                 <HeaderLink to="/about" text="How we work" />
                 <HeaderLink to="/chat" text="Let's chat" />
               </div>
-              {/* <HeaderLink to="/courses" text="Courses" /> */}
             </nav>
           </div>
           <div className={styles.headerSectionContents}>
