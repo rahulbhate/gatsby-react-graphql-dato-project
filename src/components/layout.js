@@ -6,7 +6,7 @@ import Navigation from "./navigation.js"
 import ScrollToTop from "./ScrollToTop.js"
 export default ({ children }) => (
   <div className={styles.container}>
-    <ScrollToTop />
+    <Header />
     <div className={styles.content}>{children}</div>
     <Footer>
         <div>
