@@ -45,7 +45,7 @@
       .headerSectionContents{
         .bounce {
           position: relative;
-          top: 50px;
+          top: 200px;
           animation: bounce 2s infinite;
         }
         
@@ -63,15 +63,18 @@
         margin-left: 300px;
        .spantitlemain {
          font-size: 40pt;
+         text-align: center;
        }
         .spanFuture{
           color: white;
           font-weight: 'bolder';
+          text-align: center;
         }
         .spantitle{
           color: #fba394;
           font-size: 28pt;
           font-weight: 'bold';
+          text-align: center;
         }
        
         .spansection{
@@ -79,6 +82,7 @@
           font-size: 40pt;
           font-weight: bolder;
           color: #fba394;
+          text-align: center;
         }
         h1,h2,p{
           line-height: 1.5em;
