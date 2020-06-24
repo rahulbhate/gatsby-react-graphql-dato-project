@@ -69,7 +69,7 @@ export default () => (
             </nav>
           </div>
           <div className={styles.headerSectionContents}>
-            <h1 className={styles.spantitlemain}><span className={styles.spansection}>U</span>thru</h1>
+            <img src={logo} alt="Logo" width='17%' />
             <h2 className={styles.spantitle}>The <span className={styles.spanFuture}>future</span> of property inspections</h2>
             <p className={styles.subcontents}>
               Your business doesn't have to suffer from COVID-19. Save

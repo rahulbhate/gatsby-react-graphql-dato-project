@@ -33,11 +33,14 @@
         padding-bottom: 1px; 
         text-decoration: none;
       }
+      ul {
+        margin-top: 110px;
+      }
       ul li {
         list-style: none;
         display: inline-block;
         margin: 15px;
-         padding: 5px;
+        padding: 5px;
         font-size: 14pt;
         margin-left: 50px;
       }
@@ -51,6 +54,5 @@
       }
      
     }
- 
 
 }

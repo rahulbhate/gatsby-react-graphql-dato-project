@@ -14,12 +14,12 @@ export default ({ children }) => (
         <div className={styles.row}>
           <div className={styles.column}>
           <h4>For more information please contact</h4>
-          <a href="mailto:hello@uthru.io" style={{color: 'white' ,fontSize: '20pt', fontWeight: 200, textDecoration: 'none'}}>hello@uthru.io</a>
+          <a href="mailto:hello@uthru.io" style={{color: 'white' ,fontSize: '20pt', fontWeight: 200, fontFamily: 'muli Extra-light',textDecoration: 'none'}}>hello@uthru.io</a>
           <p><a href="#" style={{color: 'white',borderBottom: '2px solid rgb(230, 161, 146)', fontSize: '16pt', paddingBottom: '2px', textDecoration: 'none', lineHeight: '3.9em'}}>Back To Top</a></p>
           </div>
           <div className={styles.column}>
           <img src={logo} alt="Logo" width='15%' style={{ float:'right'}}/>
-          <ul><li><a href="#">Privacy</a></li><li><a href="#">Terms &amp; Conditions</a></li><li>© Copyright -2020 uthru.Pty.Limited</li></ul>
+          <ul><li><a href="#">Privacy</a></li><li><a href="#">Terms &amp; Conditions</a></li><li>&copy; Copyright 2020 Uthru Pty Limited</li></ul>
           </div>
         </div>
     </Footer>

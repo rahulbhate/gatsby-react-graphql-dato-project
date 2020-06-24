@@ -42,7 +42,7 @@ export default () => (
     render={data => (
       <div className={styles.banner}>
         <div className={styles.overlay}></div>
-        <header className={styles.banner__container}>
+        <header className={styles.container}>
           <div className={styles.row}>
             <nav>
               <div className={styles.logo}>
