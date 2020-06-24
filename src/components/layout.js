@@ -26,7 +26,7 @@ export default ({ children }) => (
       </div>
       <div className={styles.footercolumns}>
         <p className={styles.footerlogo}>
-          <img src={logo} width="18%" />
+          <img src={logo} width="17%" />
         </p>
         <ul className={styles.footernavigation}>
           <li>
