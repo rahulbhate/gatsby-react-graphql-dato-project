@@ -13,7 +13,7 @@
   
     .container {
       .row {
-      height: 120px;
+      height: 20px;
         nav{
           position: fixed;
           background-color: rgba(0, 0, 0, 0.2);
@@ -71,20 +71,7 @@
             transform: translateY(-15px);
           }
         }
-       .bannerbuttons{
-         padding: 50px;
-         margin: 10px;
-          a{
-            padding: 15px;
-            background-color: #e5a191;
-            margin: 10px;
-            text-decoration: none;
-            color: #393451;
-          }
-          a:hover {
-            background-color: #ffffff;
-          }
-       }
+       
        .spantitlemain {
          font-size: 40pt;
          text-align: center;
@@ -123,7 +110,7 @@
           line-height: 1.5em;
           font-size: 18pt;
           font-weight: 200;
-          font-family: 'muli Extra-light';
+          font-family: 'muli';
         }
         
         .subcontents {
@@ -193,7 +180,7 @@
           //width: 100%;
         }
         .logo{
-          width: 40% !important;
+          width: 40%;
         }
         .navbaritems {
           width: 100%;
@@ -395,7 +382,7 @@
         text-align: center;
       }
       img {
-        width: 50% !important;
+        width: 30% !important;
       }
   }
   }

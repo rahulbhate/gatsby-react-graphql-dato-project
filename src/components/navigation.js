@@ -1,9 +1,7 @@
 import React from "react"
 import { Link, StaticQuery, graphql } from "gatsby"
 import styles from "./navigation.module.scss"
-import {
-  FaArrowDown,
-} from "react-icons/fa"
+import { FaArrowDown } from "react-icons/fa"
 
 // HeaderLink component
 const HeaderLink = props => {
@@ -20,21 +18,26 @@ const HeaderLink = props => {
 }
 // LOGO component
 const Logo = props => (
-  <Link to={props.to} style={{textDecoration: 'none'}}>
+  <Link to={props.to} style={{ textDecoration: "none" }}>
     <div>
       <h1
         style={{
           color: "white",
           lineHeight: "100px",
-          textDecoration: 'none'
+          textDecoration: "none",
         }}
       >
-      <span style={{ 
-          fontSize: '28pt',
-          textDecoration: 'underline',
-          fontWeight: 'bold'}}>U</span>thru
+        <span
+          style={{
+            fontSize: "28pt",
+            textDecoration: "underline",
+            fontWeight: "bold",
+          }}
+        >
+          U
+        </span>
+        thru
       </h1>
-     
     </div>
   </Link>
 )
@@ -55,8 +58,12 @@ export default () => (
         <header className={styles.container}>
           <div className={styles.row}>
             <nav>
-              <div style={{ flexBasis: "60%", fontSize:'25px' }}>
-                <Logo to="/" text={data.site.siteMetadata.title} style={{ textDecoration: 'none'}}/>
+              <div style={{ flexBasis: "60%", fontSize: "25px" }}>
+                <Logo
+                  to="/"
+                  text={data.site.siteMetadata.title}
+                  style={{ textDecoration: "none" }}
+                />
               </div>
               <div>
                 <HeaderLink to="/" text="Home" />
