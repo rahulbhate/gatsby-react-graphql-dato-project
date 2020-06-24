@@ -125,6 +125,7 @@
           font-weight: 200;
           font-family: 'muli Extra-light';
         }
+        
         .subcontents {
           width: 45%;
           //margin: auto;
@@ -175,7 +176,7 @@
         width: 100% !important;
       }
       img {
-        width: 50%;
+        width: 40% !important;
       }
   }
   }
@@ -192,7 +193,7 @@
           //width: 100%;
         }
         .logo{
-          width: 50% !important;
+          width: 40% !important;
         }
         .navbaritems {
           width: 100%;
@@ -218,7 +219,9 @@
       p{
         font-size: 10px;
         width: 100%;
-       
+      }
+      img {
+        width: 40% !important;
       }
   }
   }
@@ -234,7 +237,7 @@
           width: 100%;
         }
         .logo{
-          width: 50% !important;
+          width: 40% !important;
         }
         .navbaritems {
           width: 100%;
@@ -264,6 +267,9 @@
         width: 100% !important;
         line-height: 1.0em !important;
       }
+      img {
+        width: 30% !important;
+      }
   }
   }
 }
@@ -278,7 +284,7 @@
           width: 100%;
         }
         .logo{
-          width: 50% !important;
+          width: 40% !important;
         }
         .navbaritems {
           width: 100%;
@@ -306,6 +312,9 @@
         width: 100% !important;
         line-height: 1.0em !important;
       }
+      img {
+        width: 30% !important;
+      }
   }
   }
 }
@@ -320,7 +329,7 @@
           width: 100%;
         }
         .logo{
-          width: 50% !important;
+          width: 40% !important;
           align-self: center;
         }
         .navbaritems {
@@ -348,6 +357,9 @@
         font-size: 8px !important;
         width: 100% !important;
         line-height: 1.0em !important;
+      }
+      img {
+        width: 30% !important;
       }
   }
   }
@@ -381,6 +393,9 @@
       p{
         font-size: 14pt !important;
         text-align: center;
+      }
+      img {
+        width: 50% !important;
       }
   }
   }
