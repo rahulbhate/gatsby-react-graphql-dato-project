@@ -144,10 +144,15 @@
       }
     }
     .headerSectionContents {
-      margin-left: 0px !important;
-      margin: 20px 0px 20px 0px;
+      padding: 0px !important;
+      width: 100% !important;
     .bounce{
      display: none;
+    }
+    .subcontents {
+      width: 100% !important;
+      text-align: center;
+      padding: 20px;
     }
      h1{
           font-size: 12pt !important;
@@ -160,7 +165,7 @@
       }
       p{
         font-size: 13pt !important;
-        width: 100% !important;
+        text-align: center;
       }
       img {
         width: 40% !important;
@@ -180,7 +185,7 @@
           //width: 100%;
         }
         .logo{
-          width: 40%;
+          width: 30%;
         }
         .navbaritems {
           width: 100%;
@@ -192,10 +197,13 @@
      }
     }
     .headerSectionContents {
-      padding: 0px !important;
+    padding: 0px !important;
      width: 100% !important;
     .bounce{
      display: none;
+    }
+    .subcontents {
+      width: 100%;
     }
      h1{
       width: 100% !important;
