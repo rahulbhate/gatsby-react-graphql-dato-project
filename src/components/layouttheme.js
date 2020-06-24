@@ -1,6 +1,6 @@
 import React from "react"
 import styles from "./layout.module.scss"
-import Header from "./header.js"
+import Headertheme from "./headertheme.js"
 import Footer from "./footer.js"
 import { Link, StaticQuery, graphql } from "gatsby"
 import logo from "../images/uthrulogo_purpleBG.png"
@@ -8,7 +8,7 @@ import Navigation from "./navigation.js"
 import ScrollToTop from "./ScrollToTop.js"
 export default ({ children }) => (
   <div className={styles.container}>
-    <Header />
+    <Headertheme />
     <div className={styles.content}>{children}</div>
     <Footer>
         <div className={styles.row}>

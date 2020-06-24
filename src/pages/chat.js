@@ -4,7 +4,7 @@ import { graphql } from "gatsby"
 
 import styles from "./index.module.scss"
 import Title from "../components/title"
-import Layout from "../components/layout"
+import Layouttheme from "../components/layouttheme"
 import {
   FaMobile,
   FaClock,
@@ -13,7 +13,7 @@ import {
 //https://5eca132a40c162e62f5de8a4--eloquent-booth-2bc360.netlify.app/
 const Chat = ({ data: { chat } }) => (
   <>
-  <Layout>
+  <Layouttheme>
     <div className={styles.sectionFive} id="chat">
       <hr className={styles.special} />
       <h2>Finding your dream home has never been easier or safer</h2>
@@ -37,7 +37,7 @@ const Chat = ({ data: { chat } }) => (
         </div>
       </form>
     </div>
-  </Layout>
+  </Layouttheme>
   </>
 )
 
