@@ -204,6 +204,7 @@
     }
     .subcontents {
       width: 100%;
+      line-height: 1.3em !important;
     }
      h1{
       width: 100% !important;
@@ -338,7 +339,12 @@
     }
     .headerSectionContents {
       padding: 0px;
+
      width: 100% !important;
+     .subcontents {
+      width: 100%;
+      line-height: 1.3em !important;
+    }
     .bounce{
      display: none;
     }
@@ -351,7 +357,7 @@
       p{
         font-size: 8px !important;
         width: 100% !important;
-        line-height: 1.0em !important;
+    
       }
       img {
         width: 30% !important;
@@ -359,6 +365,7 @@
   }
   }
 }
+
 @media (max-width: 968px){
   .banner{
     height: 80vh;
@@ -396,7 +403,49 @@
   }
   
 }
-
+@media (max-width: 1024px){
+  .banner{
+    height: 80vh;
+    .container {
+      .row{
+        //background-color: rgba(0, 0, 0, 0.2);
+        height: 140px;
+        nav{
+          flex-direction: column;
+          width: 100%;
+          align-items: center;
+          
+        }
+      }
+    }
+    .headerSectionContents {
+      //margin-left: 0px !important;
+      //margin: 20px 0px 20px 0px;
+      width: 100% important;
+      .bounce{
+        right: -200px;
+      }
+     h1{
+          font-size: 18pt !important;
+          text-align: center;
+      }
+      h2{
+        font-size: 16pt !important;
+        line-height: 3.0em !important;
+        text-align: center;
+      }
+      p{
+        font-size: 14pt !important;
+        text-align: center;
+        width: 100% !important;
+      }
+      img {
+        width: 30% !important;
+      }
+  }
+  }
+  
+}
 .banner > * {
   position: relative;
   z-index: 10;

@@ -17,43 +17,18 @@ const Disclaimer = ({ data: { disclaimer } }) => (
     <section className={styles.howWorks}>
       <div id="about">
         <hr className={styles.rounded} />
-        <h2>Disclaimer</h2>
+        <h2>Website Disclaimer</h2>
       </div>
       <p>
-        We simplify the process for everyone; saving agents time and money and
-        making it easier for people to find the home of their dreams
+      All care is taken in the preparation of the information and published materials on this site. U THRU PTY LTD does not make any representations or give any warranties about its accuracy, reliability, completeness or suitability for any particular purpose. To the extent permissible by law, U THRU PTY LTD will not be liable for any expenses, losses, damages (including indirect or consequential damages) or costs which might be incurred as a result of the information being inaccurate or incomplete in any way and for any reason.
       </p>
-      <ul>
-        <li className={styles.bulletHeadings}>
-          01 / <b>Join</b>
-        </li>
-        <li className={styles.bulletContents}>under three minutes</li>
-        <li className={styles.bulletHeadings}>
-          02 / <b>Verify</b>
-        </li>
-        <li className={styles.bulletContents}>
-          your identity once for $9.95 and access a months’ worth of unlimited
-          inspections
-        </li>
-        <li className={styles.bulletHeadings}>
-          03 / <b>Book</b>
-        </li>
-        <li className={styles.bulletContents}>
-          Book your preferred time slot for a private, agent-free inspection
-        </li>
-        <li className={styles.bulletHeadings}>
-          04 / <b>Access</b>
-        </li>
-        <li className={styles.bulletContents}>
-          Access the property lockbox with a code sent to your phone
-        </li>
-        <li className={styles.bulletHeadings}>
-          05 / <b>Apply</b>
-        </li>
-        <li className={styles.bulletContents}>
-          They apply for their dream home!
-        </li>
-      </ul>
+      <p>
+      This site may contain hypertext links, frames or other references to other parties and their websites. U THRU PTY LTD cannot control the contents of those other sites, and make no warranty about the accuracy, timeliness or subject matter of the material located on those sites. U THRU PTY LTD do not necessarily approve of, endorse, or sponsor any content or material on such sites. U THRU PTY LTD make no warranties or representations that material on other websites to which this website is linked does not infringe the intellectual property rights of any person anywhere in the world.
+      </p>
+      <p>
+      If you have any concerns regarding the content of the Website, please contact U THRU PTY LTD.
+
+      </p>
     </section>
     <section className={styles.sectionColumns}>
       <div>

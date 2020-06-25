@@ -136,7 +136,7 @@ section{
         color: #e49c8c;
         line-height: 1.7em;
         font-size: 28pt;
-        width: 30%;
+        width: 40%;
         margin: auto;
     }
     p{
@@ -199,6 +199,7 @@ section{
     }
     .sectionTwo {
         margin: 20px 0px 20px 0px;
+        
         h2, p{
             width: 100%;
             font-size: 18pt;
@@ -208,6 +209,10 @@ section{
 @media (max-width: 768px){
     .sectionFive {
         margin: 20px 0px 20px 0px;
+        hr.special {
+            width: 100px;
+            margin: auto;
+        }
         h2, p{
             width: 100%;
             font-size: 16pt;
