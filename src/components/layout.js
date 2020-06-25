@@ -30,10 +30,10 @@ export default ({ children }) => (
         </p>
         <ul className={styles.footernavigation}>
           <li>
-            <a href="#">Privacy</a>
+            <a href="/privacy">Privacy</a>
           </li>
           <li>
-            <a href="#">Terms &amp; Conditions</a>
+            <a href="/disclaimer">Disclaimer</a>
           </li>
           <li>© Copyright 2020 uthru Pty Limited</li>
         </ul>

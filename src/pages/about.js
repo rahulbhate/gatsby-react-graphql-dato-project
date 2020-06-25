@@ -8,13 +8,21 @@ import Layouttheme from "../components/layouttheme"
 import {
   FaMobile,
   FaClock,
-  FaHandHoldingHeart,
+  FaHandPointer
 } from "react-icons/fa"
 //https://5eca132a40c162e62f5de8a4--eloquent-booth-2bc360.netlify.app/
 const About = ({ data: { about } }) => (
   <>
   <Layouttheme>
-  
+  <div className={styles.sectionFive} id="chat">
+      <hr className={styles.special} />
+      <h2>Finding your dream home has never been easier or safer</h2>
+      <p>
+        Crowded open homes are a thing of the past. Inspect vacant properties
+        independently, at your own convenience with u-thru. No agents, no set
+        times, no hassle.
+      </p>
+    </div>
     <section className={styles.howWorks}>
       <div id="about">
         <hr className={styles.rounded} />
@@ -79,7 +87,7 @@ const About = ({ data: { about } }) => (
       </div>
       <div>
         <span>
-          <FaHandHoldingHeart color={"#fba394"} size={48} />
+          <FaHandPointer color={"#fba394"} size={48} />
         </span>
         <h2>Convenient</h2>
         <p>
@@ -88,6 +96,15 @@ const About = ({ data: { about } }) => (
         </p>
       </div>
     </section>
+    <div className={styles.sectionFive} id="chat">
+      <hr className={styles.special} />
+      <h2>It's easy to get started, Let's chat</h2>
+      <p>
+       Our innovation solution automates property inspections to save time, reduce
+       overheads and keep everyone safe. To get you through COVID-19 and beyond,
+       get in touch today. We can have you up and running in 24 hours.
+      </p>
+    </div>
     <div className={styles.detailsArea}>
       <form className="js-cm-form" id="subForm" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="2BE4EF332AA2E32596E38B640E9056198BDB993E3EB63847E5EF21086953903ECF9187F0F3B85CA6BE80C29E12BD1727B70FF52493C37BEC1232353481063C71">
         <div className={styles.row}><div className={styles.column}><input type="text" id="fieldName" maxlength="200" name="cm-name" placeholder="First Name" /></div></div>
