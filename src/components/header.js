@@ -19,8 +19,8 @@ const Logo = props => (
 
 const NavMenu2 = props => (
   <>
-    <HeaderLinks to="/about" text="I'm a renter/buyer" />
     <HeaderLinks to="/chat" text="I'm an agent" />
+    <HeaderLinks to="/about" text="I'm a renter" />
   </>
 )
 

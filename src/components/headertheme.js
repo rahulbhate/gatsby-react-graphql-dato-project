@@ -1,4 +1,4 @@
-import React from "react"
+import React,{ useState, useEffect, useRef } from "react"
 import { Link, StaticQuery, graphql } from "gatsby"
 import styles from "./headertheme.module.scss"
 import logo from "../images/uthrulogo_purpleBG.png"
@@ -24,13 +24,38 @@ const Logo = props => (
     <img src={logo} alt="Logo" width="20%" />
   </Link>
 )
-const NavMenu = props => (
-  <>
+const NavMenu = (props) => {
+  console.log({props});
+  const prevScrollY = useRef(0);
+
+  const [goingUp, setGoingUp] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      if (prevScrollY.current < currentScrollY && goingUp) {
+        setGoingUp(false);
+      }
+      if (prevScrollY.current > currentScrollY && !goingUp) {
+        setGoingUp(true);
+      }
+
+      prevScrollY.current = currentScrollY;
+      console.log(goingUp, currentScrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [goingUp]);
+  return(
+    <>
     <HeaderLink to="/" text="Home" />
-    <HeaderLink to="/about" text="Renting" />
-    <HeaderLink to="/chat" text="Estate Agents" />
-  </>
-)
+    <HeaderLink to="/chat" text="Agents" />
+    <HeaderLink to="/about" text="Renters" />
+    </>
+  );
+}
 
 export default () => (
   <StaticQuery
@@ -53,7 +78,7 @@ export default () => (
                 <Logo />
               </div>
               <div className={styles.navbaritems}>
-                <NavMenu />
+                <NavMenu backgroundColor='red'/>
               </div>
             </nav>
           </div>
