@@ -94,9 +94,7 @@ export default () => (
               inspections
             </h2>
             <p className={styles.subcontents}>
-              Your business doesn't have to suffer from COVID-19. Save time,
-              stay safe and reduce overheads with automated, agent-free property
-              inspections.
+            Your business doesn’t have to suffer from COVID-19. Save time, stay safe and reduce overheads with automated, agent-free property inspections.
             </p>
             <div>
               <FaArrowDown size={48} className={styles.bounce} />
