@@ -16,8 +16,20 @@
       height: 20px;
       .header2{
         position: fixed;
-        background-color: #f6a18c;
+        background-color: #e5a191;
         width: 100%;
+        .logo{
+          width: 30%;
+          float: left;
+          line-height: 80px;
+          margin-left: 20px;
+          margin-top: 20px;
+        }
+        .navbaritems{
+          //width: 60%;
+          line-height: 100px;
+          float: right;
+        }
       }
       .header{
           position: fixed;

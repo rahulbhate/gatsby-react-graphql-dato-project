@@ -2,6 +2,7 @@ import React,{ useState, useEffect } from "react"
 import { Link, StaticQuery, graphql } from "gatsby"
 import styles from "./headertheme.module.scss"
 import logo from "../images/uthrulogo_purpleBG.png"
+import logo2 from "../images/uthrulogo_pinkBG.png"
 import { FaArrowDown } from "react-icons/fa"
 
 // HeaderLink component
@@ -17,40 +18,49 @@ const HeaderLink = props => {
     </Link>
   )
 }
-// LOGO component
-const Logo = props => (
-  <Link to={props.to}>
-    <img src={logo} alt="Logo" width="20%" />
-  </Link>
-)
+const HeaderLinkstwo = props => {
+  const activeStyle = {
+    color: "#393451",
+    fontWeight: "bold",
+    textDecoration: "underline",
+  }
+  return (
+    <Link className={styles.link} to={props.to} activeStyle={activeStyle}>
+      {props.text}
+    </Link>
+  )
+}
 const NavMenu = (props) => {
-  const [header, setHeader] = useState("header");
-
+ const [isflag, setflag] = useState();
   const listenScrollEvent = event => {
-    if (window.scrollY < 73) {
-       setHeader("header");
-       console.log(window.scrollY, header);
-    } else if (window.scrollY > 70) {
-       setHeader("header2");
-       console.log(window.scrollY, header);
+    if (window.scrollY < 630) {
+       setflag(false);
+       //console.log(window.scrollY, header, isflag);
+    } else if (window.scrollY > 630) {
+       setflag(true)
+      // console.log(window.scrollY, header, isflag);
     }
   };
 
   useEffect(() => {
     window.addEventListener("scroll", listenScrollEvent);
-   
     return () => window.removeEventListener("scroll", listenScrollEvent);
-  }, [header]);
+  }, []);
   return(
     <>
-    <nav className={`${styles.header}`}>
+    {/* className={`${styles.header} ${header}`} */}
+    <nav className={isflag ? styles.header2 : styles.header}>
               <div className={styles.logo}>
-                <Logo />
+              <Link to={props.to}>
+                <img src={isflag ? logo2 : logo} alt="Logo" width="20%" />
+              </Link>
               </div>
               <div className={styles.navbaritems}>
-              <HeaderLink to="/" text="Home" />
+                {isflag ? <> <HeaderLinkstwo to="/" text="Home" />
+              <HeaderLinkstwo to="/chat" text="Agents" />
+              <HeaderLinkstwo to="/about" text="Renters" /></>:<>  <HeaderLink to="/" text="Home" />
               <HeaderLink to="/chat" text="Agents" />
-              <HeaderLink to="/about" text="Renters" />
+              <HeaderLink to="/about" text="Renters" /></>}
               </div>
     </nav>
     </>

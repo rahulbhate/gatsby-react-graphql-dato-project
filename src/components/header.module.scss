@@ -78,9 +78,11 @@
           margin: 10px;
           border: 1px solid #ffffff;
           outline: none;
+          opacity: 0.4;
           &:hover{
             background-color: #ffffff;
             color: #393451;
+            opacity: 0.8;
           }
         }
      
