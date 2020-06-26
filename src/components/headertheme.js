@@ -58,9 +58,9 @@ const NavMenu = (props) => {
               <div className={styles.navbaritems}>
                 {isflag ? <> <HeaderLinkstwo to="/" text="Home" />
               <HeaderLinkstwo to="/chat" text="Agents" />
-              <HeaderLinkstwo to="/about" text="Renters" /></>:<>  <HeaderLink to="/" text="Home" />
+              <HeaderLinkstwo to="/about" text="Buyers/Renters" /></>:<>  <HeaderLink to="/" text="Home" />
               <HeaderLink to="/chat" text="Agents" />
-              <HeaderLink to="/about" text="Renters" /></>}
+              <HeaderLink to="/about" text="Buyers/Renters" /></>}
               </div>
     </nav>
     </>
