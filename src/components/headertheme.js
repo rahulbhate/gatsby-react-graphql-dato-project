@@ -1,4 +1,4 @@
-import React,{ useState, useEffect, useRef } from "react"
+import React,{ useState, useEffect } from "react"
 import { Link, StaticQuery, graphql } from "gatsby"
 import styles from "./headertheme.module.scss"
 import logo from "../images/uthrulogo_purpleBG.png"
@@ -17,7 +17,6 @@ const HeaderLink = props => {
     </Link>
   )
 }
-
 // LOGO component
 const Logo = props => (
   <Link to={props.to}>
@@ -25,34 +24,35 @@ const Logo = props => (
   </Link>
 )
 const NavMenu = (props) => {
-  console.log({props});
-  const prevScrollY = useRef(0);
+  const [header, setHeader] = useState("header");
 
-  const [goingUp, setGoingUp] = useState(false);
+  const listenScrollEvent = event => {
+    if (window.scrollY < 73) {
+       setHeader("header");
+       console.log(window.scrollY, header);
+    } else if (window.scrollY > 70) {
+       setHeader("header2");
+       console.log(window.scrollY, header);
+    }
+  };
 
   useEffect(() => {
-    const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-      if (prevScrollY.current < currentScrollY && goingUp) {
-        setGoingUp(false);
-      }
-      if (prevScrollY.current > currentScrollY && !goingUp) {
-        setGoingUp(true);
-      }
-
-      prevScrollY.current = currentScrollY;
-      console.log(goingUp, currentScrollY);
-    };
-
-    window.addEventListener("scroll", handleScroll, { passive: true });
-
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [goingUp]);
+    window.addEventListener("scroll", listenScrollEvent);
+   
+    return () => window.removeEventListener("scroll", listenScrollEvent);
+  }, [header]);
   return(
     <>
-    <HeaderLink to="/" text="Home" />
-    <HeaderLink to="/chat" text="Agents" />
-    <HeaderLink to="/about" text="Renters" />
+    <nav className={`${styles.header}`}>
+              <div className={styles.logo}>
+                <Logo />
+              </div>
+              <div className={styles.navbaritems}>
+              <HeaderLink to="/" text="Home" />
+              <HeaderLink to="/chat" text="Agents" />
+              <HeaderLink to="/about" text="Renters" />
+              </div>
+    </nav>
     </>
   );
 }
@@ -73,14 +73,7 @@ export default () => (
         <div className={styles.overlay}></div>
         <header className={styles.container}>
           <div className={styles.row}>
-            <nav>
-              <div className={styles.logo}>
-                <Logo />
-              </div>
-              <div className={styles.navbaritems}>
-                <NavMenu backgroundColor='red'/>
-              </div>
-            </nav>
+            <NavMenu />
           </div>
           <div className={styles.headerSectionContents}>
             <p>
