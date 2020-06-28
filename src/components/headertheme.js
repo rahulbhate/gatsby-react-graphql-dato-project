@@ -52,7 +52,7 @@ const NavMenu = (props) => {
     <nav className={isflag ? styles.header2 : styles.header}>
               <div className={styles.logo}>
               <Link to={props.to}>
-                <img src={isflag ? logo2 : logo} alt="Logo" width="20%" />
+                <img src={isflag ? logo : logo} alt="Logo" width="20%" />
               </Link>
               </div>
               <div className={styles.navbaritems}>
