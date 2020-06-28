@@ -237,7 +237,7 @@
      }
     }
     .headerSectionContents {
-      padding: 0px;
+      padding: 0px 0px 0px 0px !important;
       width: 100%;
     .bounce{
      display: none;
@@ -368,8 +368,9 @@
      }
     }
     .headerSectionContents {
-      padding: 0px 20px 20px 0px;
+      padding: 0px 0px 0px 0px !important;
      width: 100%;
+     //background-color: red;
      
     .bounce{
      display: none;
