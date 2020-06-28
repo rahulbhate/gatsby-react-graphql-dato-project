@@ -101,12 +101,29 @@
 }
 }
 @media (max-width: 768px){
+  .footercolumns {
+    float: none !important;
+    width: 100% !important;
+    min-height: 250px;
+    text-align: center;
+    .footerlogo{
+      text-align: center;
+    }
+    .footernavigation {
+      line-height: 2.5em;
+      float: none;
+      li{
+        float: none;
+       // text-align: center;
+      }
+    }
+  }
       .column {
         float: none !important;
         width: 100%;
       }
       img {
-        width: 50%;
+        width: 30%;
       }
 }
 @media (max-width: 375px){
@@ -118,8 +135,13 @@
     .footerlogo{
       text-align: center;
     }
-    .footernavigation {
+    .footernavigation{
       line-height: 2.5em;
+      li{
+        float: none;
+      }
+     
+      
     }
   }
 }
@@ -129,11 +151,14 @@
     width: 100% !important;
     min-height: 250px;
     text-align: center;
-      .footerlogo p{
+      .footerlogo {
         text-align: center;
       }
       .footernavigation {
         line-height: 2.5em;
+        li{
+          float: none;
+        }
       }
     }
   }
@@ -143,11 +168,14 @@
         width: 100% !important;
         min-height: 250px;
         text-align: center;
-        .footerlogo p{
+        .footerlogo {
           text-align: center;
         }
         .footernavigation {
           line-height: 2.5em;
+          li{
+            float: none;
+          }
         }
       }
     }
@@ -157,11 +185,14 @@
         width: 100% !important;
         min-height: 250px;
         text-align: center;
-        .footerlogo p{
+        .footerlogo {
           text-align: center;
         }
         .footernavigation {
           line-height: 2.5em;
+          li{
+            float: none;
+          }
         }
       }
     }
@@ -171,11 +202,14 @@
         width: 100% !important;
         min-height: 250px;
         text-align: center;
-        .footerlogo p{
+        .footerlogo{
           text-align: center;
         }
         .footernavigation {
           line-height: 2.5em;
+          li{
+            float: none;
+          }
         }
       }
     }
