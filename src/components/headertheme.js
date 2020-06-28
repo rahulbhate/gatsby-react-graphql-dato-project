@@ -8,7 +8,7 @@ import { FaArrowDown } from "react-icons/fa"
 // HeaderLink component
 const HeaderLink = props => {
   const activeStyle = {
-    color: "#fba394",
+    color: "#e5a191",
     fontWeight: "bold",
     textDecoration: "underline",
   }
@@ -20,7 +20,7 @@ const HeaderLink = props => {
 }
 const HeaderLinkstwo = props => {
   const activeStyle = {
-    color: "#393451",
+    color: "#e5a191",
     fontWeight: "bold",
     textDecoration: "underline",
   }

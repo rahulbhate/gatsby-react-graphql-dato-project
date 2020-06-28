@@ -35,7 +35,7 @@ export default ({ children }) => (
           <li>
             <a href="/disclaimer">Disclaimer</a>
           </li>
-          <li>© Copyright 2020 uthru Pty Limited</li>
+          <li>© Copyright 2020 U Thru Pty Limited</li>
         </ul>
       </div>
     </div>
