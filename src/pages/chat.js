@@ -14,7 +14,7 @@ import {
 const Chat = ({ data: { chat } }) => (
   <>
   <Layouttheme>
-    <div className={styles.sectionFive} id="chat">
+    <div className={styles.sectionFive}>
       <hr className={styles.special} />
       <h2>Finding your dream home has never been easier or safer</h2>
       <p>
@@ -24,7 +24,7 @@ const Chat = ({ data: { chat } }) => (
       </p>
     </div>
 
-    <div className={styles.detailsArea}>
+    <div className={styles.detailsArea} id="chatForm">
       <form className="js-cm-form" id="subForm" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="2BE4EF332AA2E32596E38B640E9056198BDB993E3EB63847E5EF21086953903ECF9187F0F3B85CA6BE80C29E12BD1727B70FF52493C37BEC1232353481063C71">
         <div className={styles.row}><div className={styles.column}><input type="text" id="fieldName" maxlength="200" name="cm-name" placeholder="First Name" /></div></div>
         {/* <input type="text" id="lname" name="lname" placeholder="Last Name" /> */}

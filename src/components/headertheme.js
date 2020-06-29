@@ -18,6 +18,18 @@ const HeaderLink = props => {
     </Link>
   )
 }
+const HeaderLinksButtons = props => {
+  return (
+    <Link className={styles.links} to={props.to}>
+      <button className={styles.btnprimary}>{props.text}</button>
+    </Link>
+  )
+}
+const NavMenu2 = props => (
+  <>
+    <HeaderLinksButtons to="/chat/#chatForm" text="Let's chat" />
+  </>
+)
 const HeaderLinkstwo = props => {
   const activeStyle = {
     color: "#e5a191",
@@ -96,8 +108,10 @@ export default () => (
             <p className={styles.subcontents}>
             Your business doesn’t have to suffer from COVID-19. Save time, stay safe and reduce overheads with automated, agent-free property inspections.
             </p>
-            <div>
+            <div className={styles.chatform}>
               <FaArrowDown size={48} className={styles.bounce} />
+              <a className={styles.btnprimary} style={{padding: '20px 53px 25px 53px', textDecoration:'none'}} href="#chatForm">Let's Chat</a>
+              {/* <NavMenu2 /> */}
             </div>
           </div>
         </header>

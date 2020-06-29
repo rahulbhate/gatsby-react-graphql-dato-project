@@ -88,6 +88,25 @@
             transform: translateY(-15px);
           }
         }
+        .btnprimary{
+          width: 234px;
+          height: 68px;
+          background-color: #393451;
+          color: #ffffff;
+          font-size: 14pt;
+          font-weight: bold;
+          cursor: pointer;
+          margin: 10px;
+          border: 1px solid #ffffff;
+          outline: none;
+          opacity: 0.6;
+          transition: all .5s ease-in-out;
+          &:hover{
+            background-color: #ffffff;
+            color: #393451;
+            opacity: 0.8;
+          }
+        }
        
        .spantitlemain {
          font-size: 40pt;
@@ -207,6 +226,7 @@
         .navbaritems {
           width: 100%;
           float: none;
+          text-align: center;
         }
       }
      .link {
@@ -241,7 +261,7 @@
 }
 @media (max-width: 320px){
   .banner{
-    height: 40vh;
+    height: 100vh !important;
     .container {
       .row{
         background-color: rgba(0, 0, 0, 0.2);
@@ -249,12 +269,13 @@
         nav{
           width: 100%;
         }
-        .logo{
-          width: 40% !important;
+        .logo img{
+          width: 70% !important;
         }
         .navbaritems {
           width: 100%;
           float: none;
+          text-align: center;
         }
       }
      .link {
@@ -266,8 +287,14 @@
       padding: 0px;
       margin-top: 0px !important;
      width: 100% !important;
+     .spantitle {
+      line-height: 1.8em !important;
+     }
     .bounce{
      display: none;
+    }
+    .chatform {
+      text-align: center;
     }
      h1{
       width: 100% !important;
@@ -288,7 +315,7 @@
 }
 @media (max-width: 411px){
   .banner{
-    height: 40vh;
+    height: 100vh !important;
     .container {
       .row{
         background-color: rgba(0, 0, 0, 0.2);
@@ -296,12 +323,13 @@
         nav{
           width: 100%;
         }
-        .logo{
-          width: 40% !important;
+        .logo img{
+          width: 50% !important;
         }
         .navbaritems {
           width: 100%;
           float: none;
+          text-align: center;
         }
       }
      .link {
@@ -313,6 +341,9 @@
      width: 100% !important;
     .bounce{
      display: none;
+    }
+    .chatform {
+      text-align: center;
     }
      h1{
       width: 100% !important;
@@ -333,7 +364,7 @@
 }
 @media (max-width: 414px){
   .banner{
-    height: 40vh;
+    height: 100vh !important;
     .container {
       .row{
         background-color: rgba(0, 0, 0, 0.2);
@@ -341,13 +372,14 @@
         nav{
           width: 100%;
         }
-        .logo{
+        .logo img{
           width: 40% !important;
           align-self: center;
         }
         .navbaritems {
           width: 100%;
           float: none;
+          text-align: center;
         }
       }
      .link {
@@ -364,6 +396,9 @@
     }
     .bounce{
      display: none;
+    }
+    .chatform {
+      text-align: center;
     }
      h1{
       width: 100% !important;

@@ -14,7 +14,7 @@ import {
 const About = ({ data: { about } }) => (
   <>
   <Layouttheme>
-  <div className={styles.sectionFive} id="chat">
+  <div className={styles.sectionFive}>
       <hr className={styles.special} />
       <h2>Finding your dream home has never been easier or safer</h2>
       <p>
@@ -96,7 +96,7 @@ const About = ({ data: { about } }) => (
         </p>
       </div>
     </section>
-    <div className={styles.sectionFive} id="chat">
+    <div className={styles.sectionFive} id="chatForm">
       <hr className={styles.special} />
       <h2>It's easy to get started, Let's chat</h2>
       <p>
