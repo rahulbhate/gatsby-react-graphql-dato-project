@@ -28,10 +28,7 @@ const About = ({ data: { about } }) => (
         <hr className={styles.rounded} />
         <h2>Here’s how it works</h2>
       </div>
-      <p>
-        We simplify the process for everyone; saving agents time and money and
-        making it easier for people to find the home of their dreams
-      </p>
+      <p></p>
       <ul>
         <li className={styles.bulletHeadings}>
           01 / <b>Join</b>
@@ -68,6 +65,16 @@ const About = ({ data: { about } }) => (
     <section className={styles.sectionColumns}>
       <div>
         <span>
+          <FaMobile color={"#fba394"} size={48} />
+        </span>
+        <h2>Safe</h2>
+        <p>
+          Gives you and your loved ones private access to each property, keeping
+          everyone safe.
+        </p>
+      </div>
+      <div>
+        <span>
           <FaClock size={48} color={"#fba394"} />
         </span>
         <h2>Quick</h2>
@@ -80,20 +87,9 @@ const About = ({ data: { about } }) => (
         <span>
           <FaHandPointer size={48} color={"#fba394"} />
         </span>
-
         <h2>Convenient</h2>
         <p>
           Instantly schedule independent inspections at times that work for you.
-        </p>
-      </div>
-      <div>
-        <span>
-          <FaMobile color={"#fba394"} size={48} />
-        </span>
-        <h2>Safe</h2>
-        <p>
-          Gives you and your loved ones private access to each property, keeping
-          everyone safe.
         </p>
       </div>
     </section>
