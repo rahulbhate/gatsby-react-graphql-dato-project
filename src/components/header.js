@@ -52,9 +52,8 @@ export default () => (
               inspections
             </h2>
             <p className={styles.subcontents}>
-              {/* U thru makes it easier for buyers and renters to find the home of
-              their dreams while saving agents time and money */}
-              Crowded open homes are a thing of the past. Inspect vacant properties independently, at your own convenience with Uthru. No agents, no set times, no hassle.
+              Uthru makes it easier for buyers and renters to find the home of
+              their dreams while saving agents time and money.
             </p>
             <div className={styles.navigationbuttons}>
               <NavMenu2 />

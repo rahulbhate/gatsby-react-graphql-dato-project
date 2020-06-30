@@ -8,7 +8,7 @@ import Layouttheme from "../components/layouttheme"
 import {
   FaMobile,
   FaClock,
-  FaHandHoldingHeart,
+  FaHandPointer,
 } from "react-icons/fa"
 //https://5eca132a40c162e62f5de8a4--eloquent-booth-2bc360.netlify.app/
 const Chat = ({ data: { chat } }) => (
@@ -16,15 +16,100 @@ const Chat = ({ data: { chat } }) => (
   <Layouttheme>
     <div className={styles.sectionFive}>
       <hr className={styles.special} />
-      <h2>Finding your dream home has never been easier or safer</h2>
+      <h2>Sell and lease real estate smarter and faster</h2>
       <p>
-        Crowded open homes are a thing of the past. Inspect vacant properties
-        independently, at your own convenience with u-thru. No agents, no set
-        times, no hassle.
+        In response to current challenges, we've made agent-free
+        property inspections a reality. We leverage technology to 
+        enable you to manage property inspections end-to-en online
+        and prospects to view properties on their own, at their own convenience.
       </p>
     </div>
+    <section className={styles.howWorks}>
+      <div id="about">
+        <hr className={styles.rounded} />
+        <h2>Here’s how it works</h2>
+      </div>
+      <p>
+        We simplify the process for everyone; saving agents time and money and
+        making it easier for people to find the home of their dreams
+      </p>
+      <ul>
+        <li className={styles.bulletHeadings}>
+          01 / <b>Join</b>
+        </li>
+        <li className={styles.bulletContents}>Prospects join uthuru</li>
+        <li className={styles.bulletHeadings}>
+          02 / <b>Verify</b>
+        </li>
+        <li className={styles.bulletContents}>
+          We verify their identity and pre-authorise their
+          credit card to safeguard the property.
+        </li>
+        <li className={styles.bulletHeadings}>
+          03 / <b>Book</b>
+        </li>
+        <li className={styles.bulletContents}>
+          They book their preferred time slot for an
+          agent-free-inspection
+        </li>
+        <li className={styles.bulletHeadings}>
+          04 / <b>Access</b>
+        </li>
+        <li className={styles.bulletContents}>
+          They receive a code to independently access
+          the property at their allocated time, that later expires
+        </li>
+        <li className={styles.bulletHeadings}>
+          05 / <b>Apply</b>
+        </li>
+        <li className={styles.bulletContents}>
+          They apply for their dream home!
+        </li>
+      </ul>
+    </section>
+    <section className={styles.sectionColumns}>
+      <div>
+        <span>
+          <FaMobile size={48} color={"#fba394"} />
+        </span>
+        <h2>Safe</h2>
+        <p>
+          Give prospects private, agent-free access to the property,
+          keeping everyone safe whilst saving your time.
+        </p>
+      </div>
+      <div>
+        <span>
+          <FaClock size={48} color={"#fba394"} />
+        </span>
 
-    <div className={styles.detailsArea} id="chatForm">
+        <h2>Efficient</h2>
+        <p>
+          No time wasters -- we pre-authenticate 
+          all prospects so you only get verified leads.
+        </p>
+      </div>
+      <div>
+        <span>
+          <FaHandPointer color={"#fba394"} size={48} />
+        </span>
+        <h2>Convenient</h2>
+        <p>
+          Verified prospects can instantly schedule an independent inspection
+          at a time convenient to them.
+        </p>
+      </div>
+    </section>
+    <div className={styles.sectionFive} id="chatForm">
+      <hr className={styles.special} />
+      <h2>It's easy to get started, Let's chat</h2>
+      <p>
+       Our innovative solution automates property inspections to save time, reduce
+       overheads and keep everyone safe. To get you through COVID-19 and beyond,
+       get in touch today. We can have you up and running in 24 hours.
+      </p>
+    </div>
+    <div className={styles.detailsArea}>
       <form className="js-cm-form" id="subForm" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="2BE4EF332AA2E32596E38B640E9056198BDB993E3EB63847E5EF21086953903ECF9187F0F3B85CA6BE80C29E12BD1727B70FF52493C37BEC1232353481063C71">
         <div className={styles.row}><div className={styles.column}><input type="text" id="fieldName" maxlength="200" name="cm-name" placeholder="First Name" /></div></div>
         {/* <input type="text" id="lname" name="lname" placeholder="Last Name" /> */}

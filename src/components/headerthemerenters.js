@@ -106,10 +106,11 @@ export default () => (
               inspections
             </h2>
             <p className={styles.subcontents}>
-            Your business doesn’t have to suffer from COVID-19. Save time, stay safe and reduce overheads with automated, agent-free property inspections.
+            The convenience of viewing your next home in your own
+            time, agent-free is now a reality.
             </p>
             <div className={styles.chatform}>
-            <a className={styles.btnprimary} style={{padding: '20px 53px 25px 53px', textDecoration:'none'}} href="#chatForm">Let's Chat</a>
+              <a className={styles.btnprimary} style={{padding: '20px 53px 25px 53px', textDecoration:'none'}} href="#chatForm">Let's Chat</a>
               {/* <NavMenu2 /> */}
             </div>
             <FaArrowDown size={48} className={styles.bounce} />

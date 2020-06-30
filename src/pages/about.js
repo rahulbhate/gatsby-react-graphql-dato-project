@@ -4,7 +4,7 @@ import { graphql } from "gatsby"
 
 import styles from "./index.module.scss"
 import Title from "../components/title"
-import Layouttheme from "../components/layouttheme"
+import Layoutthemerenters from "../components/layoutthemerenters"
 import {
   FaMobile,
   FaClock,
@@ -13,7 +13,7 @@ import {
 //https://5eca132a40c162e62f5de8a4--eloquent-booth-2bc360.netlify.app/
 const About = ({ data: { about } }) => (
   <>
-  <Layouttheme>
+  <Layoutthemerenters>
   <div className={styles.sectionFive}>
       <hr className={styles.special} />
       <h2>Finding your dream home has never been easier or safer</h2>
@@ -54,42 +54,43 @@ const About = ({ data: { about } }) => (
           04 / <b>Access</b>
         </li>
         <li className={styles.bulletContents}>
-          Access the property lockbox with a code sent to your phone
+          Access the property independently with a code sent to your phone
         </li>
         <li className={styles.bulletHeadings}>
-          05 / <b>Apply</b>
+          05 / <b>Inspect</b>
         </li>
         <li className={styles.bulletContents}>
-          They apply for their dream home!
+          Inspect your dream home in your own time --no rushing, no
+          agents
         </li>
       </ul>
     </section>
     <section className={styles.sectionColumns}>
       <div>
         <span>
-          <FaMobile size={48} color={"#fba394"} />
+          <FaClock size={48} color={"#fba394"} />
         </span>
-        <h2>Safe</h2>
+        <h2>Quick</h2>
         <p>
-          Sign up easily and unlock a world of agent-free vacant property
+          Sign up easily and unlock a world of agent-free property
           inspections.
         </p>
       </div>
       <div>
         <span>
-          <FaClock size={48} color={"#fba394"} />
+          <FaHandPointer size={48} color={"#fba394"} />
         </span>
 
-        <h2>Efficient</h2>
+        <h2>Convenient</h2>
         <p>
           Instantly schedule independent inspections at times that work for you.
         </p>
       </div>
       <div>
         <span>
-          <FaHandPointer color={"#fba394"} size={48} />
+          <FaMobile color={"#fba394"} size={48} />
         </span>
-        <h2>Convenient</h2>
+        <h2>Safe</h2>
         <p>
           Gives you and your loved ones private access to each property, keeping
           everyone safe.
@@ -98,11 +99,11 @@ const About = ({ data: { about } }) => (
     </section>
     <div className={styles.sectionFive} id="chatForm">
       <hr className={styles.special} />
-      <h2>It's easy to get started, Let's chat</h2>
+      <h2>Questions? We're always open for a chat</h2>
       <p>
-       Our innovation solution automates property inspections to save time, reduce
-       overheads and keep everyone safe. To get you through COVID-19 and beyond,
-       get in touch today. We can have you up and running in 24 hours.
+     We automate property inspections to give you flexibility
+     and save your time while keeping everyone safe. If you'd
+     like to know more, feel free to get in touch today.
       </p>
     </div>
     <div className={styles.detailsArea}>
@@ -118,7 +119,7 @@ const About = ({ data: { about } }) => (
         </div>
       </form>
     </div>
-  </Layouttheme>
+  </Layoutthemerenters>
   </>
 )
 
