@@ -18,10 +18,7 @@ const Chat = ({ data: { chat } }) => (
       <hr className={styles.special} />
       <h2>Sell and lease real estate smarter and faster</h2>
       <p>
-        In response to current challenges, we've made agent-free
-        property inspections a reality. We leverage technology to 
-        enable you to manage property inspections end-to-en online
-        and prospects to view properties on their own, at their own convenience.
+      In response to current challenges, we’ve made agent-free property inspections a reality. We leverage technology to enable you to manage vacant property inspections end-to-end online and prospects to self-tour vacant properties at their own convenience.
       </p>
     </div>
     <section className={styles.howWorks}>
@@ -60,10 +57,10 @@ const Chat = ({ data: { chat } }) => (
           the property at their allocated time, that later expires
         </li>
         <li className={styles.bulletHeadings}>
-          05 / <b>Apply</b>
+          05 / <b>Inspect</b>
         </li>
         <li className={styles.bulletContents}>
-          They apply for their dream home!
+        They self-tour the property in their own time then simply drop the keys back in the box on their way out
         </li>
       </ul>
     </section>
@@ -104,9 +101,7 @@ const Chat = ({ data: { chat } }) => (
       <hr className={styles.special} />
       <h2>It's easy to get started, Let's chat</h2>
       <p>
-       Our innovative solution automates property inspections to save time, reduce
-       overheads and keep everyone safe. To get you through COVID-19 and beyond,
-       get in touch today. We can have you up and running in 24 hours.
+      Our innovative solution automates vacant property inspections to save time, reduce overheads and keep everyone safe. To get you through COVID-19 and beyond, get in touch today. 
       </p>
     </div>
     <div className={styles.detailsArea}>
