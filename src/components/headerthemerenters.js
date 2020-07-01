@@ -45,10 +45,10 @@ const HeaderLinkstwo = props => {
 const NavMenu = (props) => {
  const [isflag, setflag] = useState();
   const listenScrollEvent = event => {
-    if (window.scrollY < 630) {
+    if (window.scrollY < 5) {
        setflag(false);
        //console.log(window.scrollY, header, isflag);
-    } else if (window.scrollY > 630) {
+    } else if (window.scrollY > 5) {
        setflag(true)
       // console.log(window.scrollY, header, isflag);
     }
