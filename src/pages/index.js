@@ -14,6 +14,8 @@ import {
 const Index = ({ data: { home } }) => (
   <>
   <Layout>
+    {/* <h1>{home.subtitle}</h1>
+    <p>{home.contents}</p> */}
   </Layout>
   </>
 )
