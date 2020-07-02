@@ -36,16 +36,16 @@
 
 .footercontainer {
   padding: 50px;
-  background-color: #393451;
+  background-color: #362f4f;
   min-height: 270px;
 }
 .footercolumns{
   width: 50%;
   float: left;
-  background-color: #393451;
+  background-color: #362f4f;
 }
 .footercontact {
-  color: #e5a191;
+  color: #e8a597;
   margin-top: 0px;
   margin-bottom: 15px;
 }
@@ -56,7 +56,7 @@
     font-size: 26px;
   }
   a:hover{
-    color: #e5a191;
+    color: #e8a597;
   }
 }
 .footerlogo {
@@ -78,20 +78,20 @@
     padding: 0px 12px;
   }
   a:hover {
-    color: #e5a191;
+    color: #e8a597;
   }
 }
 
 .scrolltop {
   color: #FFFFFF;
   font-size: 18px;
-  border-bottom: 2px solid #e5a191;
+  border-bottom: 2px solid #e8a597;
   padding-bottom: 5px;
   text-decoration: none;
   
 }
 .scrolltop:hover{
-    color: #e5a191;
+    color: #e8a597;
 }
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {

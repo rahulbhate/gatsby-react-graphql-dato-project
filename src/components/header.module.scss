@@ -69,7 +69,7 @@
         .btnprimary{
           width: 234px;
           height: 68px;
-          background-color: #393451;
+          background-color: #362f4f;
           color: #ffffff;
           font-size: 14pt;
           font-weight: bold;
@@ -81,7 +81,7 @@
           transition: all .5s ease-in-out;
           &:hover{
             background-color: #ffffff;
-            color: #393451;
+            color: #362f4f;
             opacity: 0.8;
           }
         }
@@ -505,5 +505,5 @@
   width: 100%;
   height: 100%;
   z-index: 1;
-  background-color:#e5a191;
+  background-color:#e8a597;
 }

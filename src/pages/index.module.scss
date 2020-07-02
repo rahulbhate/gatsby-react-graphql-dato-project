@@ -23,9 +23,10 @@ section{
         top: -1px;
       }
     input{
-        color: #8b1fa6; 
-        font-size: "13px";
-        background-color: #e5a191;
+        color: #362f4f; 
+        font-size: 13pt;
+        font-weight: 200;
+        background-color: #e8a597;
         border: 0px;
         border-bottom: 1px solid #8d6871;
         width: 55%;
@@ -51,15 +52,15 @@ section{
     margin-top: 6px
   }
     ::-webkit-input-placeholder { /* Chrome */ color: white; }
-    input:focus::-webkit-input-placeholder { color: #8b1fa6; }
+    input:focus::-webkit-input-placeholder { color: #362f4f; }
     input[type='submit']:hover{
         cursor: pointer;
         color: white;
-        background-color: #393451;
+        background-color: #362f4f;
     }
     input[type='submit']{
         background-color: white;
-        color: black;
+        color: #362f4f;
         padding: 10px 10px;
         font-size: 15pt;
         margin-top: 25px;
@@ -71,7 +72,7 @@ section{
     margin: 100px 0px 112px 165px;
     h2{
         width: 40%;
-        color: #393451;
+        color: #362f4f;
         font-weight: bold;
         font-size: 28pt;
         line-height: 1.7em;
@@ -87,7 +88,7 @@ section{
     }
     /* Rounded border */
     hr.special {
-        border-top: 8px solid #373251;
+        border-top: 8px solid #362f4f;
         border-radius: 5px;
         width: 100px;
         //margin: auto;
@@ -98,7 +99,7 @@ section{
     margin: 100px 0px 60px 165px;
     h2{
         width: 40%;
-        color: #393451;
+        color: #362f4f;
         font-weight: bold;
         font-size: 28pt;
         line-height: 1.7em;
@@ -127,20 +128,20 @@ section{
     margin: 0px 50px 0px 50px;
     /* Rounded border */
     hr.rounded {
-        border-top: 8px solid #e5a191;
+        border-top: 8px solid #e8a597;
         border-radius: 5px;
         width: 100px;
         margin: auto;
     }
     h2{
-        color: #e49c8c;
+        color: #e8a597;
         line-height: 1.7em;
         font-size: 28pt;
         width: 40%;
         margin: auto;
     }
     p{
-        color: #373251;
+        color: #362f4f;
         line-height: 1.7em;
         font-size: 18pt;
         width: 80%;
@@ -156,7 +157,7 @@ section{
     }
 }
 .bulletHeadings{
-    color: #e5a191;
+    color: #e8a597;
     margin-bottom: 15px;
     font-size: 26pt;
     font-weight: bold;
@@ -171,13 +172,13 @@ section{
 .sectionColumns{
     padding: 50px 0px 50px 0px;
     margin: 0px 50px 50px 50px;
-    background-color: #393452;
+    background-color: #362f4f;
     div{
         width: calc(99% / 3);
         padding-bottom: 50px;
         display: inline-table;
         h2{
-            color: #fba394;
+            color: #e8a597;
             font-size: 24pt;
             line-height: 2.5em;
         }
