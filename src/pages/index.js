@@ -11,7 +11,7 @@ import {
   FaHandHoldingHeart,
 } from "react-icons/fa"
 //https://5eca132a40c162e62f5de8a4--eloquent-booth-2bc360.netlify.app/
-const Index = ({ data: { home } }) => (
+const Index = () => (
   <>
   <Layout>
     {/* <h1>{home.subtitle}</h1>
@@ -22,15 +22,15 @@ const Index = ({ data: { home } }) => (
 
 export default Index
 
-export const query = graphql`
-  query IndexQuery {
-    home: datoCmsHomePage {
-      seoMetaTags {
-        ...GatsbyDatoCmsSeoMetaTags
-      }
-      title
-      subtitle
-      contents
-    }
-  }
-`
+// export const query = graphql`
+//   query IndexQuery {
+//     home: datoCmsHomePage {
+//       seoMetaTags {
+//         ...GatsbyDatoCmsSeoMetaTags
+//       }
+//       title
+//       subtitle
+//       contents
+//     }
+//   }
+// `

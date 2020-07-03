@@ -107,10 +107,11 @@ export default () => (
             </h2>
             <p className={styles.subcontents}>
             The convenience of viewing your next home in your own
-            time, agent-free is now a reality.
+            time, agent-free is now a reality. <br/><br/>
+            Join the Uthru revolution today
             </p>
             <div className={styles.chatform}>
-              <a className={styles.btnprimary} style={{padding: '20px 53px 25px 53px', textDecoration:'none'}} href="#chatForm">Let's Chat</a>
+              <a className={styles.btnprimary} style={{padding: '20px 53px 25px 53px', textDecoration:'none'}} href="#chatForm">Join</a>
               {/* <NavMenu2 /> */}
             </div>
             <FaArrowDown size={48} className={styles.bounce} />

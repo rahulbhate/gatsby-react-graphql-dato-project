@@ -11,7 +11,7 @@ import {
   FaHandPointer
 } from "react-icons/fa"
 //https://5eca132a40c162e62f5de8a4--eloquent-booth-2bc360.netlify.app/
-const About = ({ data: { about } }) => (
+const About = () => (
   <>
   <Layoutthemerenters>
   <div className={styles.sectionFive}>
@@ -38,27 +38,25 @@ const About = ({ data: { about } }) => (
           02 / <b>Verify</b>
         </li>
         <li className={styles.bulletContents}>
-          your identity once for $9.95 and access a months’ worth of unlimited
-          inspections
+          Verify your identity
         </li>
         <li className={styles.bulletHeadings}>
           03 / <b>Book</b>
         </li>
         <li className={styles.bulletContents}>
-          Book your preferred time slot for a private, agent-free inspection
+        Book your private, agent-free inspection
         </li>
         <li className={styles.bulletHeadings}>
           04 / <b>Access</b>
         </li>
         <li className={styles.bulletContents}>
-          Access the property independently with a code sent to your phone
+        Access the vacant property with a code sent to your phone
         </li>
         <li className={styles.bulletHeadings}>
           05 / <b>Inspect</b>
         </li>
         <li className={styles.bulletContents}>
-          Inspect your dream home in your own time --no rushing, no
-          agents
+        Inspect the vacant property at your chosen time—no agents, no crowds, no hassle
         </li>
       </ul>
     </section>
@@ -95,23 +93,21 @@ const About = ({ data: { about } }) => (
     </section>
     <div className={styles.sectionFive} id="chatForm">
       <hr className={styles.special} />
-      <h2>Questions? We're always open for a chat</h2>
+      <h2>Join the Uthru revolution!</h2>
       <p>
-     We automate property inspections to give you flexibility
-     and save your time while keeping everyone safe. If you'd
-     like to know more, feel free to get in touch today.
+      Inspect vacant properties independently at your convenience. No agents, no set times, no hassle. Join the Uthru revolution today.
       </p>
     </div>
     <div className={styles.detailsArea}>
       <form className="js-cm-form" id="subForm" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="2BE4EF332AA2E32596E38B640E9056198BDB993E3EB63847E5EF21086953903ECF9187F0F3B85CA6BE80C29E12BD1727B70FF52493C37BEC1232353481063C71">
         <div className={styles.row}><div className={styles.column}><input type="text" id="fieldName" maxlength="200" name="cm-name" placeholder="First Name" /></div></div>
-        {/* <input type="text" id="lname" name="lname" placeholder="Last Name" /> */}
+        <div className={styles.row}><div className={styles.column}><input type="text" id="fieldjrkini" maxlength="200" name="cm-f-jrkini" placeholder="Last Name"/></div></div>
         <div className={styles.row}><div className={styles.column}><input type="text" id="fieldjrkini" maxlength="200" name="cm-f-jrkini" placeholder="Organization"/></div></div>
         <div className={styles.row}><div className={styles.column}><input autocomplete="Email" className="js-cm-email-input qa-input-email" id="fieldEmail" maxlength="200" name="cm-ydukhrj-ydukhrj" required="" type="email"  placeholder="Email" /></div></div>
         <div className={styles.row}><div className={styles.column}><input id="fieldjrkind" maxlength="200" name="cm-f-jrkind" type="number" placeholder="Phone" /></div></div>
         <div className={styles.row}><div className={styles.columnequals}><input aria-required="" id="cm-privacy-consent" name="cm-privacy-consent" required="" type="checkbox" /><label for="cm-privacy-consent" classname={styles.columnequals} style={{display: 'inline-block', marginLeft: '24px', verticalAlign: 'middle'}}>I agree to be emailed</label></div></div>
         <div className={styles.row}>
-        <input type="submit" value="Subscribe" />
+        <input type="submit" value="Join" />
         </div>
       </form>
     </div>
@@ -121,15 +117,15 @@ const About = ({ data: { about } }) => (
 
 export default About
 
-export const query = graphql`
-  query AboutQuery {
-    about: datoCmsAboutPage {
-      seoMetaTags {
-        ...GatsbyDatoCmsSeoMetaTags
-      }
-      title
-      subtitle
-      contents
-    }
-  }
-`
+// export const query = graphql`
+//   query AboutQuery {
+//     about: datoCmsAboutPage {
+//       seoMetaTags {
+//         ...GatsbyDatoCmsSeoMetaTags
+//       }
+//       title
+//       subtitle
+//       contents
+//     }
+//   }
+// `
