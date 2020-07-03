@@ -108,7 +108,7 @@ export default () => (
             <p className={styles.subcontents}>
             The convenience of viewing your next home in your own
             time, agent-free is now a reality. <br/><br/>
-            Join the Uthru revolution today
+            Join the Uthru revolution today.
             </p>
             <div className={styles.chatform}>
               <a className={styles.btnprimary} style={{padding: '20px 53px 25px 53px', textDecoration:'none'}} href="#chatForm">Join</a>
