@@ -1,10 +1,9 @@
 import React from "react"
 import { graphql } from "gatsby"
 //import Img from "gatsby-image"
-
+import Layoutthemepivacydisclaimer from "../components/layoutthemepivacydisclaimer"
 import styles from "./index.module.scss"
 import Title from "../components/title"
-import Layouttheme from "../components/layouttheme"
 import {
   FaMobile,
   FaClock,
@@ -13,7 +12,7 @@ import {
 //https://5eca132a40c162e62f5de8a4--eloquent-booth-2bc360.netlify.app/
 const Privacy = ({ data: { privacy } }) => (
   <>
-  <Layouttheme>
+  <Layoutthemepivacydisclaimer>
     <section className={styles.howWorks}>
       <div id="about">
         <hr className={styles.rounded} />
@@ -122,7 +121,7 @@ statements of each and every website that collects personal identifiable informa
         </p>
       </div>
     </section>
-  </Layouttheme>
+  </Layoutthemepivacydisclaimer>
   </>
 )
 

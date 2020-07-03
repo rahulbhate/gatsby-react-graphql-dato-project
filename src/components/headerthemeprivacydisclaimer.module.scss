@@ -1,0 +1,223 @@
+@import '../styles/global';
+
+
+.banner {
+  // background-image: url('../images/kitchen-female.png');
+   height: 11vh;
+   position: relative;
+  // /* Create the parallax scrolling effect */
+  
+    .container {
+      .row {
+      height: 20px;
+      .header2{
+        position: fixed;
+        background-color: #362f4f;
+        width: 100%;
+        z-index: 20;
+        .logo{
+          width: 30%;
+          float: left;
+          line-height: 80px;
+          margin-left: 20px;
+          margin-top: 20px;
+        }
+        .navbaritems{
+          //width: 60%;
+          line-height: 100px;
+          float: right;
+        }
+      }
+      .header{
+          position: fixed;
+          background-color: #362f4f;
+          width: 100%;
+          .logo{
+            width: 30%;
+            float: left;
+            line-height: 80px;
+            margin-left: 20px;
+            margin-top: 20px;
+          }
+          .navbaritems{
+            //width: 60%;
+            line-height: 100px;
+            float: right;
+          }
+        }
+      }
+      .link {
+        color: $color-pallet-links;
+        font-size: 13pt;
+        font-weight: bold;
+        text-decoration: none;
+        margin: 20px;
+        &:hover {
+          color: $color-pallete-2;
+          text-decoration:underline;
+        }
+
+        &:not(:last-child) {
+          padding: 10px;
+        } 
+      }
+  
+    }
+}
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media (max-width: 1366px) {
+  .banner {
+    background-attachment: scroll;
+  }
+}
+@media (max-width: 768px){
+  .banner{
+    height: 11vh !important;
+    .container {
+      .row{
+        //background-color: rgba(0, 0, 0, 0.2);
+        //height: 10px;
+        nav{
+          flex-direction: column;
+          width: 100%;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 375px){
+  .banner{
+    height: 11vh !important;
+    .container {
+      .row{
+        //background-color: rgba(0, 0, 0, 0.2);
+        //height: 10px;
+        nav{
+          flex-direction: column;
+          width: 100%;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 320px){
+  .banner{
+    height: 40vh !important;
+    .container {
+      .row{
+        background-color: rgba(0, 0, 0, 0.2);
+        height: 10px;
+        nav{
+          width: 100%;
+        }
+        .logo img{
+          width: 70% !important;
+        }
+        .navbaritems {
+          width: 100%;
+          float: none;
+          text-align: center;
+        }
+      }
+     .link {
+       padding: 0px !important;
+       margin: 10px;
+     }
+    }
+  
+  }
+}
+@media (max-width: 411px){
+  .banner{
+    height: 11vh !important;
+    .container {
+      .row{
+        background-color: rgba(0, 0, 0, 0.2);
+        height: 10px;
+        nav{
+          width: 100%;
+        }
+        .logo img{
+          width: 50% !important;
+        }
+        .navbaritems {
+          width: 100%;
+          float: none;
+          text-align: center;
+        }
+      }
+     .link {
+       padding: 0px !important;
+     }
+    }
+  
+  }
+}
+@media (max-width: 414px){
+  .banner{
+    height: 30vh !important;
+    .container {
+      .row{
+        background-color: rgba(0, 0, 0, 0.2);
+        height: 10px;
+        nav{
+          width: 100%;
+        }
+        .logo img{
+          width: 40% !important;
+          align-self: center;
+        }
+        .navbaritems {
+          width: 100%;
+          float: none;
+          text-align: center;
+        }
+      }
+     .link {
+       padding: 0px !important;
+     }
+    }
+  
+  }
+}
+
+@media (max-width: 968px){
+  .banner{
+    height: 11vh;
+    .container {
+      .row{
+        //background-color: rgba(0, 0, 0, 0.2);
+        height: 140px;
+        nav{
+          flex-direction: column;
+          width: 100%;
+          align-items: center;
+        }
+      }
+    }
+  
+  }
+  
+}
+@media (max-width: 1024px){
+  .banner{
+    height: 11vh;
+    .container {
+      .row{
+        //background-color: rgba(0, 0, 0, 0.2);
+        height: 140px;
+        nav{
+          flex-direction: column;
+          width: 100%;
+          align-items: center;
+          
+        }
+      }
+    }
+  }
+  
+}
+

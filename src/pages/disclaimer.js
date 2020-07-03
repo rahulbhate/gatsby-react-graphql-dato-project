@@ -4,7 +4,7 @@ import { graphql } from "gatsby"
 
 import styles from "./index.module.scss"
 import Title from "../components/title"
-import Layouttheme from "../components/layouttheme"
+import Layoutthemepivacydisclaimer from "../components/layoutthemepivacydisclaimer"
 import {
   FaMobile,
   FaClock,
@@ -13,7 +13,7 @@ import {
 //https://5eca132a40c162e62f5de8a4--eloquent-booth-2bc360.netlify.app/
 const Disclaimer = ({ data: { disclaimer } }) => (
   <>
-  <Layouttheme>
+  <Layoutthemepivacydisclaimer>
     <section className={styles.howWorks}>
       <div id="about">
         <hr className={styles.rounded} />
@@ -62,7 +62,7 @@ const Disclaimer = ({ data: { disclaimer } }) => (
         </p>
       </div>
     </section>
-  </Layouttheme>
+  </Layoutthemepivacydisclaimer>
   </>
 )
 
