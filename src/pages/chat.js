@@ -24,12 +24,13 @@ const Chat = () => (
     <section className={styles.howWorks}>
       <div id="about">
         <hr className={styles.rounded} />
-        <h2>Here’s how it works</h2>
+        <h2>How it works</h2>
+        <p></p>
       </div>
-      <p>
+      {/* <p>
         We simplify the process for everyone; saving agents time and money and
         making it easier for people to find the home of their dreams
-      </p>
+      </p> */}
       <ul>
         <li className={styles.bulletHeadings}>
           01 / <b>Join</b>

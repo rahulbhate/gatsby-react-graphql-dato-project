@@ -26,7 +26,8 @@ const About = () => (
     <section className={styles.howWorks}>
       <div id="about">
         <hr className={styles.rounded} />
-        <h2>Here’s how it works</h2>
+        <h2>How it works</h2>
+        <p></p>
       </div>
       <p></p>
       <ul>
