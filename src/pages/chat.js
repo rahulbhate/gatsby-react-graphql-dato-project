@@ -34,33 +34,30 @@ const Chat = () => (
         <li className={styles.bulletHeadings}>
           01 / <b>Join</b>
         </li>
-        <li className={styles.bulletContents}>Prospects join uthuru</li>
+        <li className={styles.bulletContents}>Buyer/Renter joins Uthru</li>
         <li className={styles.bulletHeadings}>
           02 / <b>Verify</b>
         </li>
         <li className={styles.bulletContents}>
-          We verify their identity and pre-authorise their
-          credit card to safeguard the property.
+        We verify their identity and pre-authorise their credit card to safeguard the property
         </li>
         <li className={styles.bulletHeadings}>
           03 / <b>Book</b>
         </li>
         <li className={styles.bulletContents}>
-          They book their preferred time slot for an
-          agent-free-inspection
+        They book their preferred time slot for an agent-free, vacant property inspection
         </li>
         <li className={styles.bulletHeadings}>
           04 / <b>Access</b>
         </li>
         <li className={styles.bulletContents}>
-          They receive a code to independently access
-          the property at their allocated time, that later expires
+        They receive a code to independently access the property at their allocated time
         </li>
         <li className={styles.bulletHeadings}>
           05 / <b>Inspect</b>
         </li>
         <li className={styles.bulletContents}>
-        They self-tour the property in their own time then simply drop the keys back in the box on their way out
+        They self-tour the property at their allocated time
         </li>
       </ul>
     </section>
@@ -96,8 +93,10 @@ const Chat = () => (
           at a time convenient to them.
         </p>
       </div>
+      <div id="chatForm"></div>
     </section>
-    <div className={styles.sectionFive} id="chatForm">
+    
+    <div className={styles.sectionFive}>
       <hr className={styles.special} />
       <h2>It's easy to get started, Let's chat</h2>
       <p>
@@ -115,7 +114,7 @@ const Chat = () => (
         <input id="cm-privacy-consent-hidden" name="cm-privacy-consent-hidden" type="hidden" value="true"></input>
         </div></div>
         <div className={styles.row}>
-        <input type="submit" value="Subscribe" />
+        <input type="submit" value="Submit" />
         </div>
       </form>
       <script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>

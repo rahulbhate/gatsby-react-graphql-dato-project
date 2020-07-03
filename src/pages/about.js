@@ -33,7 +33,7 @@ const About = () => (
         <li className={styles.bulletHeadings}>
           01 / <b>Join</b>
         </li>
-        <li className={styles.bulletContents}>under three minutes</li>
+        <li className={styles.bulletContents}>Join in under three minutes</li>
         <li className={styles.bulletHeadings}>
           02 / <b>Verify</b>
         </li>
@@ -90,8 +90,10 @@ const About = () => (
           Instantly schedule independent inspections at times that work for you.
         </p>
       </div>
+      <div id="chatForm"></div>
     </section>
-    <div className={styles.sectionFive} id="chatForm">
+    
+    <div className={styles.sectionFive}>
       <hr className={styles.special} />
       <h2>Join the Uthru revolution!</h2>
       <p>
