@@ -18,6 +18,14 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: "U thru",
+        display: "minimal-ui",
+        icon: "src/images/uthru-icon2.png",
+      },
+    },
+    {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [`Muli`],
@@ -51,6 +59,6 @@ module.exports = {
     },
     "gatsby-plugin-sass",
     "gatsby-plugin-react-helmet",
-    "gatsby-transformer-remark",
+    "gatsby-transformer-remark"
   ],
 }
