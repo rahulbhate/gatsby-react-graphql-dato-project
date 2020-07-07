@@ -69,10 +69,10 @@ const NavMenu = (props) => {
               </div>
               <div className={styles.navbaritems}>
                 {isflag ? <> <HeaderLinkstwo to="/" text="Home" />
-              <HeaderLinkstwo to="/chat" text="Agents" />
-              <HeaderLinkstwo to="/about" text="Buyers/Renters" /></>:<>  <HeaderLink to="/" text="Home" />
-              <HeaderLink to="/chat" text="Agents" />
-              <HeaderLink to="/about" text="Buyers/Renters" /></>}
+              <HeaderLinkstwo to="/agents" text="Agents" />
+              <HeaderLinkstwo to="/buyersrenters" text="Buyers/Renters" /></>:<>  <HeaderLink to="/" text="Home" />
+              <HeaderLink to="/agents" text="Agents" />
+              <HeaderLink to="/buyersrenters" text="Buyers/Renters" /></>}
               </div>
     </nav>
     </>

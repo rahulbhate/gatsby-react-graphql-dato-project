@@ -67,8 +67,8 @@ export default () => (
               </div>
               <div>
                 <HeaderLink to="/" text="Home" />
-                <HeaderLink to="/about" text="How we work" />
-                <HeaderLink to="/chat" text="Let's chat" />
+                <HeaderLink to="/agents" text="How we work" />
+                <HeaderLink to="/buyersrenters" text="Let's chat" />
               </div>
             </nav>
           </div>

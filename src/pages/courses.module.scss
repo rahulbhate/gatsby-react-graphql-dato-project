@@ -6,7 +6,7 @@
     display: inline-block;
     box-sizing: border-box;
     margin: 10px;
-    background-Color:$color-pallete-6;
+    background-Color:black;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     @media screen and (min-width: 1px) and (max-width: 768px) {
@@ -33,14 +33,14 @@
    
 }
 .cards__price {
-    color: $color-pallete-1;
+    color: white;
     text-align: center;
 }
 .cards__subtitle {
     text-align: center;
 }
 .button{
-    background-color:$color-pallete-1 ;
+    background-color: blue ;
     color: honeydew;
     padding: 7px 10px;
     outline: none;

@@ -32,13 +32,13 @@
         }
       }
       .link {
-        color: $color-pallet-links;
+        color: white;
         font-size: 13pt;
         font-weight: bold;
         text-decoration: none;
         margin: 20px;
         &:hover {
-          color: $color-pallete-2;
+          color: $color-pallet-background;
           text-decoration:underline;
         }
 
@@ -69,7 +69,7 @@
         .btnprimary{
           width: 234px;
           height: 68px;
-          background-color: #362f4f;
+          background-color: #393451;
           color: #ffffff;
           font-size: 14pt;
           font-weight: bold;
@@ -505,5 +505,5 @@
   width: 100%;
   height: 100%;
   z-index: 1;
-  background-color:#e8a597;
+  background-color:#e5a191;
 }

@@ -19,8 +19,8 @@ const Logo = props => (
 
 const NavMenu2 = props => (
   <>
-    <HeaderLinks to="/chat" text="Agents" />
-    <HeaderLinks to="/about" text="Buyers/Renters" />
+    <HeaderLinks to="/agents" text="I’m an agent" />
+    <HeaderLinks to="/buyersrenters" text="I’m a buyer/renter" />
   </>
 )
 
@@ -48,7 +48,7 @@ export default () => (
           </div>
           <div className={styles.headerSectionContents}>
             <h2 className={styles.spantitle}>
-              The <span className={styles.spanFuture}>future</span> of property
+            The <span className={styles.spanFuture}>future</span> of property
               inspections
             </h2>
             <p className={styles.subcontents}>

@@ -12,7 +12,7 @@
       height: 20px;
       .header2{
         position: fixed;
-        background-color: #362f4f;
+        background-color: #393451;
         width: 100%;
         z-index: 20;
         .logo{
@@ -30,7 +30,7 @@
       }
       .header{
           position: fixed;
-          background-color: #362f4f;
+          background-color: #393451;
           width: 100%;
           .logo{
             width: 30%;
@@ -47,13 +47,13 @@
         }
       }
       .link {
-        color: $color-pallet-links;
+        color: white;
         font-size: 13pt;
         font-weight: bold;
         text-decoration: none;
         margin: 20px;
         &:hover {
-          color: $color-pallete-2;
+          color: $color-pallet-background;
           text-decoration:underline;
         }
 

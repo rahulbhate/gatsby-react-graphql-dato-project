@@ -26,7 +26,7 @@ section{
         color: #362f4f; 
         font-size: 13pt;
         font-weight: 200;
-        background-color: #e8a597;
+        background-color: #e5a191;
         border: 0px;
         border-bottom: 1px solid #8d6871;
         width: 55%;
@@ -56,11 +56,11 @@ section{
     input[type='submit']:hover{
         cursor: pointer;
         color: white;
-        background-color: #362f4f;
+        background-color: #393451;
     }
     input[type='submit']{
         background-color: white;
-        color: #362f4f;
+        color: #393451;
         padding: 10px 10px;
         font-size: 15pt;
         margin-top: 25px;
@@ -72,7 +72,7 @@ section{
     margin: 100px 0px 112px 165px;
     h2{
         width: 40%;
-        color: #362f4f;
+        color: #393451;
         font-weight: bold;
         font-size: 28pt;
         line-height: 1.7em;
@@ -88,7 +88,7 @@ section{
     }
     /* Rounded border */
     hr.special {
-        border-top: 8px solid #362f4f;
+        border-top: 8px solid #393451;
         border-radius: 5px;
         width: 100px;
         //margin: auto;
@@ -99,7 +99,7 @@ section{
     margin: 100px 0px 60px 165px;
     h2{
         width: 40%;
-        color: #362f4f;
+        color: #393451;
         font-weight: bold;
         font-size: 28pt;
         line-height: 1.7em;
@@ -115,7 +115,7 @@ section{
     }
      /* Rounded border */
      hr.special {
-        border-top: 8px solid #373251;
+        border-top: 8px solid #393451;
         border-radius: 5px;
         width: 100px;
         //margin: auto;
@@ -128,20 +128,20 @@ section{
     margin: 0px 50px 0px 50px;
     /* Rounded border */
     hr.rounded {
-        border-top: 8px solid #e8a597;
+        border-top: 8px solid #e5a191;
         border-radius: 5px;
         width: 100px;
         margin: auto;
     }
     h2{
-        color: #e8a597;
+        color: #e5a191;
         line-height: 1.7em;
         font-size: 28pt;
         width: 40%;
         margin: auto;
     }
     p{
-        color: #362f4f;
+        color: #393451;
         line-height: 1.7em;
         font-size: 18pt;
         width: 80%;
@@ -157,7 +157,7 @@ section{
     }
 }
 .bulletHeadings{
-    color: #e8a597;
+    color: #e5a191;
     margin-bottom: 15px;
     font-size: 26pt;
     font-weight: bold;
@@ -172,13 +172,13 @@ section{
 .sectionColumns{
     padding: 50px 0px 50px 0px;
     margin: 0px 50px 50px 50px;
-    background-color: #362f4f;
+    background-color: #393451;
     div{
         width: calc(99% / 3);
         padding-bottom: 50px;
         display: inline-table;
         h2{
-            color: #e8a597;
+            color: #e5a191;
             font-size: 24pt;
             line-height: 2.5em;
         }
@@ -218,7 +218,7 @@ section{
             width: 100%;
             font-size: 16pt;
             text-align: center;
-        }   
+        }
     }
 }
 @media (max-width: 768px){
@@ -231,7 +231,7 @@ section{
         }
     }
 }
-@media (max-width: 768px){
+@media (max-width: 768px) {
     .sectionColumns {
         margin: 0px;
        div {
@@ -239,10 +239,45 @@ section{
        }
        
     }
-    .bulletContents{
+    .bulletHeadings{
         font-size: 14pt;
     }
     .bulletContents{
-        font-size: 14pt;
+        font-size: 13pt;
     }
+   
+}
+
+@media (max-width: 411px) {
+    .sectionColumns {
+        margin: 0px;
+       div {
+           width: 100%;
+       }
+       
+    }
+    .bulletHeadings{
+        font-size: 10pt;
+    }
+    .bulletContents{
+        font-size: 10pt;
+    }
+   
+}
+
+@media (max-width: 320px) {
+    .sectionColumns {
+        margin: 0px;
+       div {
+           width: 100%;
+       }
+       
+    }
+    .bulletHeadings{
+        font-size: 11pt;
+    }
+    .bulletContents{
+        font-size: 10pt;
+    }
+   
 }

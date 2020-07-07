@@ -19,7 +19,7 @@ const About = () => (
       <h2>Finding your dream home has never been easier or safer</h2>
       <p>
         Crowded open homes are a thing of the past. Inspect vacant properties
-        independently, at your own convenience with u-thru. No agents, no set
+        independently, at your own convenience with Uthru. No agents, no set
         times, no hassle.
       </p>
     </div>
