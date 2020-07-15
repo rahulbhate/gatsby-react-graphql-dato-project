@@ -134,6 +134,7 @@ const Chat = () => (
         </div>
         <div className={styles.row}>
         <input type="submit" value="Join" />
+        <button type="submit">Join</button>
         </div>
       </form>
       <script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
