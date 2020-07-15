@@ -12,4 +12,5 @@ export const onClientEntry = () => {
   window.onload = () => {
     addScript("https://js.createsend1.com/javascript/copypastesubscribeformlogic.js")
    
+  }
 }
