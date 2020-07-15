@@ -105,25 +105,26 @@ const Chat = () => (
       </p>
     </div>
     <div className={styles.detailsArea}>
-      <form className="js-cm-form" id="subForm" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="2BE4EF332AA2E32596E38B640E9056198BDB993E3EB63847E5EF21086953903ECF9187F0F3B85CA6BE80C29E12BD1727B70FF52493C37BEC1232353481063C71">
+      <form className="js-cm-form" id="subForm" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="2BE4EF332AA2E32596E38B640E90561960B417CF1923E8E3E9D6EF86B1437F97601BE21DF871AF7BF78D9504029A1A9BCB15B24C238DD879116813F2687ECC84">
         <div className={styles.row}><div className={styles.column}>
-                <input aria-label="First name" id="fieldjruuiit" maxlength="200" name="cm-f-jruuiit" placeholder="First Name" />
+                <input aria-label="First name" id="fieldjybydk" maxlength="200" name="cm-f-jybydk" required="" placeholder="First Name"/>
             </div>
         </div>
         <div className={styles.row}><div className={styles.column}>
-                <input aria-label="Last Name" id="fieldjruuiij" maxlength="200" name="cm-f-jruuiij" placeholder="Last Name"/>
+                <input aria-label="Last name" id="fieldjybydd" maxlength="200" name="cm-f-jybydd" required="" placeholder="Last Name" />
             </div>
         </div>
         <div className={styles.row}><div className={styles.column}>
-                <input aria-label="Organisation" id="fieldjrkini" maxlength="200" name="cm-f-jrkini" placeholder="Organization"/>
+                <input aria-label="Organisation" id="fieldjybydh" maxlength="200" name="cm-f-jybydh" placeholder="Organization" />
             </div>
         </div>
         <div className={styles.row}><div className={styles.column}>
-                <input aautocomplete="Email" aria-label="Email" class="js-cm-email-input qa-input-email" id="fieldEmail" maxlength="200" name="cm-ydukhrj-ydukhrj" required="" type="email"  placeholder="Email" />
+                <input autocomplete="Email" aria-label="Email" class="js-cm-email-input qa-input-email" id="fieldEmail" maxlength="200" name="cm-yhjljuh-yhjljuh" required="" type="email" placeholder="Email" />
             </div>
         </div>
         <div className={styles.row}><div className={styles.column}>
-                <input aria-label="Phone" id="fieldjrkind" maxlength="200" name="cm-f-jrkind" type="number" placeholder="Phone" />
+                
+                <input aria-label="Phone" id="fieldjybydu" maxlength="200" name="cm-f-jybydu" type="number" placeholder="Phone" />
             </div>
         </div>
         <div className={styles.row}><div className={styles.columnequals}>
@@ -132,7 +133,7 @@ const Chat = () => (
             </div>
         </div>
         <div className={styles.row}>
-        <button type="submit">Join</button>
+        <input type="submit" value="Join" />
         </div>
       </form>
       <script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
