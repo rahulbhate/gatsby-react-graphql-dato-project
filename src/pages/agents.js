@@ -105,6 +105,7 @@ const Chat = () => (
       </p>
     </div>
     <div className={styles.detailsArea}>
+    
       <form className="js-cm-form" id="subForm" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="2BE4EF332AA2E32596E38B640E90561960B417CF1923E8E3E9D6EF86B1437F97601BE21DF871AF7BF78D9504029A1A9BCB15B24C238DD879116813F2687ECC84">
     
         <div className={styles.row}><div className={styles.column}>
