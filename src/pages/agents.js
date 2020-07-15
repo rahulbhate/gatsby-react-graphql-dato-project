@@ -133,7 +133,6 @@ const Chat = () => (
             </div>
         </div>
         <div className={styles.row}>
-        <input type="submit" value="Join" />
         <button type="submit">Join</button>
         </div>
       </form>
