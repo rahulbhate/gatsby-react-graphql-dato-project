@@ -102,7 +102,7 @@ const About = () => (
       </p>
     </div>
     <div className={styles.detailsArea}>
-    <script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
+    //<script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
     <form className="js-cm-form" id="subForm" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="2BE4EF332AA2E32596E38B640E9056190134966126610899F0D95CFEBB3DFDC3750E5E25569004B6DD2688D9059E5EF5673C564979B945463D2D38A77B1E0BF5">
 
         <div className={styles.row}><div className={styles.column}>
