@@ -59,6 +59,16 @@ section{
         background-color: #393451;
     }
     input[type='submit'], button#joinBtn{
+    input[type='submit']{
+        background-color: white;
+        color: #393451;
+        padding: 10px 10px;
+        font-size: 15pt;
+        margin-top: 25px;
+        border-radius: 5px;
+        border: 2px solid #FFFFFF;
+    }
+    #joinBtn{
         background-color: white;
         color: #393451;
         padding: 10px 10px;
