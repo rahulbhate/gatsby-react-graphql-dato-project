@@ -119,7 +119,7 @@ const Chat = () => (
             </div>
         </div>
         <div className={styles.row}><div className={styles.column}>
-                <input autocomplete="Email" aria-label="Email" class="js-cm-email-input qa-input-email" id="fieldEmail" maxlength="200" name="cm-yhjljuh-yhjljuh" required="" type="email" placeholder="Email" />
+                <input autocomplete="Email" aria-label="Email" className="js-cm-email-input qa-input-email" id="fieldEmail" maxlength="200" name="cm-yhjljuh-yhjljuh" required="" type="email" placeholder="Email" />
             </div>
         </div>
         <div className={styles.row}><div className={styles.column}>
@@ -133,7 +133,7 @@ const Chat = () => (
             </div>
         </div>
         <div className={styles.row}>
-        <input class="js-cm-submit-button" type="submit" value="Join" />
+        <button classname="js-cm-submit-button" type="submit">Join</button>
         </div>
       </form>
       <script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
