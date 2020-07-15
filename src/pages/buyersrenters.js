@@ -133,7 +133,7 @@ const About = () => (
         </div>
     
         <div className={styles.row}>
-            <input type="submit" value="Join">
+            <input class="js-cm-submit-button" type="submit" value="Join" />
         </div>
     
       </form>
