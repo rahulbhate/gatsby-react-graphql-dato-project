@@ -135,6 +135,7 @@ const Chat = () => (
             </div>
         </div>
         <div className={styles.row}>
+            <input id="joinBtn" className="js-cm-submit-button" type="submit" />
         </div>
       </form>
       
