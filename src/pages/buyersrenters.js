@@ -114,7 +114,7 @@ const About = () => (
             </div>
         </div>
     
-        <div className={styles.row}><div className={styles.column}>zzzzzzzzz
+        <div className={styles.row}><div className={styles.column}>
             <input autocomplete="Email" aria-label="Email" class="js-cm-email-input qa-input-email" id="fieldEmail" maxlength="200" name="cm-ydukdhj-ydukdhj" required="" type="email" placeholder="Email" />
             </div>
         </div>
